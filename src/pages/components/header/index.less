@@ -1,0 +1,145 @@
+.home {
+  .header {
+    height: 100px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, opacity 0.3s;
+    min-width: 1280px;
+    &.hasBG {
+      background: rgba(18, 21, 26, 0.8);
+      backdrop-filter: blur(20px);
+    }
+    img.logo {
+      pointer-events: none;
+      width: 142px;
+      margin-left: 160px;
+      cursor: pointer;
+    }
+    .header-items {
+      height: 100%;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      .header-item {
+        flex: none;
+        height: 100%;
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: MicrosoftYaHei, MicrosoftYaHei-Bold;
+        font-weight: 700;
+        text-align: left;
+        color: #fff;
+        line-height: 20px;
+        cursor: pointer;
+        .node {
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          background: white;
+          margin-right: 8px;
+          position: relative;
+          left: -14px;
+          opacity: 0;
+          transform: scaleX(1.67);
+          transition: left 0.3s, transform 0.3s, opacity 0.1s;
+          &.active {
+            transform: scaleX(1);
+            opacity: 1;
+            left: 0;
+          }
+        }
+        &:hover {
+          .node {
+            transform: scaleX(1);
+            opacity: 1;
+            left: 0;
+          }
+        }
+      }
+    }
+    .regist {
+      cursor: pointer;
+      flex: none;
+      width: 108px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 14px;
+      font-family: MicrosoftYaHei;
+      color: #fff;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+      .animation {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 100%;
+        opacity: 1;
+        background: #ff4906;
+        transition: left 0.3s, opacity 0.1s;
+      }
+      &:hover {
+        .animation {
+          left: 0;
+          opacity: 1;
+        }
+      }
+    }
+    .login {
+      cursor: pointer;
+      flex: none;
+      width: 228px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+      font-family: MicrosoftYaHei, MicrosoftYaHei-Bold;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      line-height: 20px;
+      padding-left: 40px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+      .animation {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 100%;
+        opacity: 1;
+        background: #ff4906;
+        transition: left 0.3s, opacity 0.1s;
+      }
+      &:hover {
+        .animation {
+          left: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
