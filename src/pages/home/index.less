@@ -1,11 +1,11 @@
-// @font-face {
-//   font-family: 'FZJUNH_CUJW';
-//   //src: url('https://ali2.a.kwimgs.com/udata/pkg/ks-ad-ssp-cdn/home/home2021/FZJHJW-subfont.ttf');
-// }
-// @font-face {
-//   font-family: 'Gilroy-ExtraBold';
-//   //src: url('https://ali2.a.kwimgs.com/udata/pkg/ks-ad-fe/Gilroy_ExtraBold.ttf');
-// }
+@font-face {
+  font-family: 'FZJUNH_CUJW';
+  //src: url('https://ali2.a.kwimgs.com/udata/pkg/ks-ad-ssp-cdn/home/home2021/FZJHJW-subfont.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  //src: url('https://ali2.a.kwimgs.com/udata/pkg/ks-ad-fe/Gilroy_ExtraBold.ttf');
+}
 @font-face {
   font-family: 'MicrosoftYaHei';
   src: local('MicrosoftYaHei'), local('PingFangSC'), local('PingFang SC');
@@ -37,7 +37,10 @@ body,
     padding-left: calc(80px + (100vw - 1440px) / 2);
   }
   .calculate-left {
-    left: calc(80px + (100vw - 1440px) / 2);
+    left: calc(0px + (100vw - 1440px) / 2);
+  }
+  .calculate-right {
+    right: calc(0px + (100vw - 1440px) / 2);
   }
   @media (max-width: 1440px) {
     .calculate-margin-left {
@@ -47,7 +50,10 @@ body,
       padding-left: 80px;
     }
     .calculate-left {
-      left: 80px;
+      left: 0px;
+    }
+    .calculate-right {
+      right: 0px;
     }
   }
   figure {

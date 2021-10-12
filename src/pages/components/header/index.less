@@ -1,12 +1,13 @@
 .home {
   .header {
-    height: 100px;
+    height: 70px;
     position: fixed;
     z-index: 10;
     width: 100%;
     display: flex;
     align-items: center;
     transition: background 0.3s, opacity 0.3s;
+    background-color: #202329;
     min-width: 1280px;
     &.hasBG {
       background: rgba(18, 21, 26, 0.8);
@@ -25,17 +26,22 @@
       justify-content: flex-end;
       .header-item {
         flex: none;
+        position: relative;
         height: 100%;
         padding: 0 32px;
         display: flex;
         align-items: center;
-        font-size: 14px;
-        font-family: MicrosoftYaHei, MicrosoftYaHei-Bold;
+        font-size: 16px;
+        //font-family: 'Times New Roman', Times, serif;
+        //         font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB',
+          'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
         font-weight: 700;
         text-align: left;
         color: #fff;
-        line-height: 20px;
         cursor: pointer;
+        line-height: 20px;
+        transition: all 0.3s ease;
         .node {
           height: 6px;
           width: 6px;
@@ -53,6 +59,7 @@
             left: 0;
           }
         }
+
         &:hover {
           .node {
             transform: scaleX(1);
@@ -61,12 +68,33 @@
           }
         }
       }
+      .header-item:hover {
+        color: rgba(254, 144, 0, 1);
+        font-size: 16.5px;
+        font-weight: 700;
+      }
+      .header-item::after {
+        content: '';
+        width: 0%;
+        height: 6px;
+        background: rgba(254, 144, 0, 1);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      .header-item:hover::after {
+        opacity: 1;
+        width: 100%;
+      }
     }
+
     .regist {
       cursor: pointer;
       flex: none;
       width: 108px;
-      height: 100px;
+      height: 70px;
       background: rgba(255, 255, 255, 0.05);
       font-size: 14px;
       font-family: MicrosoftYaHei;
@@ -90,7 +118,7 @@
         right: 0;
         left: 100%;
         opacity: 1;
-        background: #ff4906;
+        background: rgba(254, 144, 0, 1);
         transition: left 0.3s, opacity 0.1s;
       }
       &:hover {
@@ -100,11 +128,12 @@
         }
       }
     }
+
     .login {
       cursor: pointer;
       flex: none;
       width: 228px;
-      height: 100px;
+      height: 70px;
       background: rgba(255, 255, 255, 0.1);
       font-size: 14px;
       font-family: MicrosoftYaHei, MicrosoftYaHei-Bold;
@@ -131,7 +160,7 @@
         right: 0;
         left: 100%;
         opacity: 1;
-        background: #ff4906;
+        background: rgba(254, 144, 0, 1);
         transition: left 0.3s, opacity 0.1s;
       }
       &:hover {
