@@ -1,0 +1,90 @@
+@import '../../common/default.less';
+.home {
+  .home-layout-wrapper {
+    width: 100%;
+    height: 720px;
+    text-align: center;
+    overflow: hidden;
+    .home-layout {
+      margin: 0 auto;
+      width: 1152px;
+      padding: 0 24px;
+      overflow: hidden;
+      height: 100%;
+      > div {
+        float: left;
+        width: 100%;
+      }
+      .col {
+        .content-wrapper {
+          border-radius: 4px;
+          background: #fff;
+          cursor: pointer;
+          overflow: hidden;
+          position: relative;
+        }
+      }
+    }
+    &:nth-of-type(odd) {
+      background: #fff;
+    }
+    &:nth-of-type(even) {
+      background-color: @bgColor;
+    }
+  }
+  h2,
+  h3 {
+    text-align: center;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+    color: @titleColor;
+    margin-top: 88px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: @titleColor;
+  }
+  .line {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background: #ffbf00;
+    margin: 16px auto 72px;
+  }
+  /* 功能介绍 */
+  .home-func-wrapper {
+    height: 720px;
+    text-align: center;
+    .image {
+      height: 240px;
+      position: relative;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 90% auto;
+      margin-bottom: 62px;
+    }
+    .col {
+      height: 400px;
+    }
+    p {
+      font-size: 16px;
+      color: @contentColor;
+    }
+  }
+  .home-hover {
+    border: 1px solid #e9e9e9;
+    transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1),
+      box-shadow 0.45s cubic-bezier(0.645, 0.045, 0.355, 1),
+      border 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 2px 24px fade(#000, 10);
+      border-color: #fff;
+    }
+  }
+}

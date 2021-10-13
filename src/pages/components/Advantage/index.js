@@ -3,8 +3,9 @@ import QueueAnim from 'rc-queue-anim';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { Row, Col } from 'antd';
 import { page1 } from './data';
+import './index.less';
 
-export default function Page1() {
+export default function Advantage() {
   const children = page1.map((d, i) => (
     <QueueAnim component={Col} key={i} type="bottom" className="col" componentProps={{ span: 8 }}>
       <div key="image" className="image" style={{ backgroundImage: `url(${d.src})` }} />
@@ -13,7 +14,7 @@ export default function Page1() {
     </QueueAnim>
   ));
   return (
-    <div className="home-layout-wrapper home-func-wrapper" id="home-func">
+    <section className="home-layout-wrapper home-func-wrapper" id="home-func">
       <h2>功能介绍</h2>
       <i className="line" />
       <OverPack className="home-layout" location="home-func" playScale={0.4}>
@@ -29,6 +30,6 @@ export default function Page1() {
           </QueueAnim>
         </QueueAnim>
       </OverPack>
-    </div>
+    </section>
   );
 }
