@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import AnimationBtn from '../AnimationBtn';
+import BannerImage from './BannerImage';
 
 import './index.less';
 
 const Brand = () => {
+  const GLOBAL_CFG = {
+    loop: true,
+  };
+
   useEffect(() => {
     document.querySelectorAll('.brand .animation-item').forEach((el, index, arr) => {
       el.style.transitionDelay = `${index * 0.05}s`;
@@ -48,7 +53,7 @@ const Brand = () => {
             text="开始制作"
           />
           <a href="https://e.kuaishou.com/#/e/home" target="_blank" rel="noreferrer">
-            <AnimationBtn className="to-ad animation-item" text="xxxx" />
+            <AnimationBtn className="to-ad animation-item" text="了解更多" />
           </a>
         </div>
         <div className="description animation-item">
@@ -56,7 +61,7 @@ const Brand = () => {
         </div>
       </div>
       <div className="calculate-right info">
-        <video
+        {/* <video
           id="lp-video"
           autoplay="autoplay"
           muted="muted"
@@ -68,11 +73,12 @@ const Brand = () => {
           webkit-playsinline="true"
           autostart="0"
           src="https://files.wondercv.com/%E9%A6%96%E9%A1%B5%E8%A7%86%E9%A2%91_v3.ogg"
-        ></video>
+        ></video> */}
+        <BannerImage />
       </div>
     </section>
   );
 };
-const name = 'XXXXX';
-const slogon = 'XXXXXXXXXXX';
+const name = 'kauishou';
+const slogon = 'ejkfgifge2ifg';
 export default Brand;
