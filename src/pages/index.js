@@ -11,9 +11,8 @@ const Index = () => {
   return (
     <main>
       <Brand />
-
-      {/*<Advantage />
-     <GoodCases />
+      <Advantage />
+      {/*<GoodCases />
       <Partner />
       <Contact />
       <ScrollToTop /> */}

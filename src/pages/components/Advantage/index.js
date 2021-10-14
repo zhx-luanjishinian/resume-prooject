@@ -3,6 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { Row, Col } from 'antd';
 import { page1 } from './data';
+import './index.less';
 
 export default function Page1() {
   const children = page1.map((d, i) => (
