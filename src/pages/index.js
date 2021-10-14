@@ -11,7 +11,6 @@ const Index = () => {
   return (
     <main>
       <Brand />
-
       <Advantage key="Advantage" />
       {/*<GoodCases />
       <Partner />
