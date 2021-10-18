@@ -1,6 +1,7 @@
 import React from 'react';
 import Brand from './components/Brand';
-import Advantage from './components/Advantage';
+import Test from './components/Advantage';
+import Page2 from './components/Product';
 // // import Solution from '../components/Solution';
 // import GoodCases from '../components/GoodCases';
 // import Partner from '../components/Partner';
@@ -9,10 +10,12 @@ import Advantage from './components/Advantage';
 
 const Index = () => {
   return (
-    <main>
+    <main className="home-main">
       <Brand />
-      <Advantage />
+      <Test />
+
       {/*<GoodCases />
+       <Advantage />
       <Partner />
       <Contact />
       <ScrollToTop /> */}

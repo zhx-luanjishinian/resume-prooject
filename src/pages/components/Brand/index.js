@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import DataAnimation from '../../common/DataAnimation';
 import AnimationBtn from '../AnimationBtn';
 import BannerImage from './BannerImage';
 
@@ -79,6 +80,6 @@ const Brand = () => {
     </section>
   );
 };
-const name = 'kauishou';
-const slogon = 'ejkfgifge2ifg';
+const name = '优加简历';
+const slogon = '定制免费简历模版';
 export default Brand;

@@ -45,15 +45,16 @@ export const page3 = [
       <p key="3">支持数据分析</p>,
     ],
     // exp: '免费使用',
-    svg: (<svg width="32px" height="32px" viewBox="0 0 32 32">
-      <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.8500478%" id="linearGradient-1">
-          <stop stopColor="#FFD24C" offset="0%" />
-          <stop stopColor="#FFB800" offset="100%" />
-        </linearGradient>
-      </defs>
-      <path
-        d="M11.2,19.9763991 L1.43301577,25.9589289
+    svg: (
+      <svg width="32px" height="32px" viewBox="0 0 32 32">
+        <defs>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="98.8500478%" id="linearGradient-1">
+            <stop stopColor="#FFD24C" offset="0%" />
+            <stop stopColor="#FFB800" offset="100%" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M11.2,19.9763991 L1.43301577,25.9589289
            C0.542750835,26.5042392 1.20441457e-15,27.4731633 1.33226763e-15,28.5171628
               L0,28.5171628 L0,30 C1.3527075e-16,31.1045695 0.8954305,32 2,32
               L30,32 C31.1045695,32 32,31.1045695 32,30 L32,30 L32,28.5391533
@@ -62,10 +63,10 @@ export const page3 = [
               L23.2,7.2 C23.2,3.2235498 19.9764502,-7.30462051e-16 16,0
               C12.0235498,7.30462051e-16 8.8,3.2235498 8.8,7.2 L8.8,7.2
               L8.8,12.7384615 C8.8,14.8708611 9.72700154,16.7867478 11.2,18.1051172 L11.2,19.9763991 Z"
-        fill="#D9D9D9"
-      />
-      <path
-        d="M11.2,19.9763991 L1.43301577,25.9589289
+          fill="#D9D9D9"
+        />
+        <path
+          d="M11.2,19.9763991 L1.43301577,25.9589289
         C0.542750835,26.5042392 1.20441457e-15,27.4731633 1.33226763e-15,28.5171628
               L0,28.5171628 L0,30 C1.3527075e-16,31.1045695 0.8954305,32 2,32
               L30,32 C31.1045695,32 32,31.1045695 32,30 L32,30 L32,28.5391533
@@ -74,10 +75,11 @@ export const page3 = [
               L23.2,7.2 C23.2,3.2235498 19.9764502,-7.30462051e-16 16,0
               C12.0235498,7.30462051e-16 8.8,3.2235498 8.8,7.2 L8.8,7.2
               L8.8,12.7384615 C8.8,14.8708611 9.72700154,16.7867478 11.2,18.1051172 L11.2,19.9763991 Z"
-        fill="url(#linearGradient-1)"
-        className="icon-hover"
-      />
-    </svg>),
+          fill="url(#linearGradient-1)"
+          className="icon-hover"
+        />
+      </svg>
+    ),
   },
   {
     title: '企业版',
@@ -116,7 +118,8 @@ export const page3 = [
           fill="url(#linearGradient-1)"
           className="icon-hover"
         />
-      </svg>),
+      </svg>
+    ),
   },
   {
     title: '企业 VIP 版',
@@ -125,7 +128,8 @@ export const page3 = [
       <p key="2">可以指定可用模板，企业内共享模板</p>,
       <p key="3">支持创建多个企业级账户</p>,
       <p key="4">支持自定义发布审批流</p>,
-      <p key="5">支持自定义域名</p>],
+      <p key="5">支持自定义域名</p>,
+    ],
     svg: (
       <svg width="32px" height="32px" viewBox="0 0 32 32">
         <path
@@ -227,7 +231,8 @@ export const page3 = [
           fill="url(#linearGradient-1)"
           className="icon-hover"
         />
-      </svg>),
+      </svg>
+    ),
   },
 ];
 

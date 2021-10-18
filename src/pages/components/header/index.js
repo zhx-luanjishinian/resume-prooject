@@ -93,15 +93,15 @@ const Header = () => {
 export default Header;
 export const HeaderItems = [
   {
-    text: '主页主页1',
+    text: '首页',
     link: '/',
   },
   {
-    text: '主页主页2',
+    text: '简历修改',
     link: '/',
   },
   {
-    text: '主页试试3',
+    text: '模拟面试',
     link: '/',
   },
 ];
