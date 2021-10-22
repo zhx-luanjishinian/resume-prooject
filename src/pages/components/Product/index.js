@@ -1,10 +1,11 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-
 import QRCode from 'qrcode.react';
 import { Row, Col } from 'antd';
+import 'antd/dist/antd.css';
 import { page2 } from '../../common/data';
+import './index.less';
 
 export default function Page2() {
   const children = page2.map((d, i) => {
@@ -33,9 +34,16 @@ export default function Page2() {
           ease="easeOutQuart"
           leaveReverse
         >
-          <h2 key="h2">精品案例扫一扫</h2>
+          <h2 key="h2">优加免费福利产品</h2>
           <i key="i" className="line" />
-          <QueueAnim key="content" component={Row} type="bottom" componentProps={{ gutter: 171 }}>
+          <QueueAnim
+            key="content"
+            component={Row}
+            type="bottom"
+            className="ss"
+            style={{ display: 'flex', flexDirection: Row, marginLeft: 0 }}
+            componentProps={{ gutter: 171 }}
+          >
             {children}
           </QueueAnim>
         </QueueAnim>

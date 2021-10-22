@@ -23,7 +23,8 @@ const Page1 = () => {
     <div className="home-layout-wrapper home-func-wrapper" id="home-func">
       <h2>功能介绍</h2>
       <i className="line" />
-      <div className="home-layout" location="home-func" playScale={0.4}>
+
+      <OverPack className="home-layout" location="home-func" playScale={0.2}>
         <QueueAnim
           className="home-func"
           type="bottom"
@@ -31,12 +32,11 @@ const Page1 = () => {
           ease="easeOutQuart"
           leaveReverse
         >
-          111
-          <QueueAnim componentProps={{ gutter: 171 }}>
+          <QueueAnim component={Row} componentProps={{ gutter: 171 }}>
             {children}
           </QueueAnim>
         </QueueAnim>
-      </div>
+      </OverPack>
     </div>
   );
 };

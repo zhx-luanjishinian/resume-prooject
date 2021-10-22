@@ -2,35 +2,35 @@ import React from 'react';
 
 export const page1 = [
   {
-    title: '轻松建站',
-    content: '支持可视化编辑、自由拖拽排版、实时预览、在线访问加速等功能',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/MmROsqZndrFBrIspzLlL.png',
-  },
-  {
-    title: '数据分析',
+    title: '简历修改',
     content: '网站内设有数据监测埋点，助你时刻掌握站点效果，鉴别有效渠道',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/ONvKhpRAmkCfdEhkUZkJ.png',
   },
   {
-    title: '企业协同',
+    title: '模拟面试',
     content: '企业版支持以团队管理的方式，多人协作完成营销站点，共享资源',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/oxmXLgGjCeXfYPcVSbKg.png',
+  },
+  {
+    title: '优加内推',
+    content: '支持可视化编辑、自由拖拽排版、实时预览、在线访问加速等功能',
+    src: 'https://gw.alipayobjects.com/zos/rmsportal/MmROsqZndrFBrIspzLlL.png',
   },
 ];
 
 export const page2 = [
   {
-    title: '端午节',
+    title: '优加面经',
     url: 'https://render.alipay.com/p/f/fd-jauizbz9/index.html',
     image: 'https://gw.alipayobjects.com/zos/rmsportal/VMhxnfHxvCgksDCnbfQX.jpg',
   },
   {
-    title: '余额宝4周年',
+    title: '优加公众号',
     url: 'https://render.alipay.com/p/f/fd-jauj8apg/index.html',
     image: 'https://gw.alipayobjects.com/zos/rmsportal/kJCZlvEAvTnyLVqzrhzH.jpg',
   },
   {
-    title: '支付宝付款',
+    title: '优加小程序',
     url: 'http://www.anijue.com/p/q/j5rxse2a/pages/home/index.html',
     image: 'https://gw.alipayobjects.com/zos/rmsportal/yKHLCeGLgdFoxFXhzFtu.jpg',
   },

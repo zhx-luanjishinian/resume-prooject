@@ -1,6 +1,6 @@
 import React from 'react';
 import Brand from './components/Brand';
-import Test from './components/Advantage';
+import Page1 from './components/Advantage';
 import Page2 from './components/Product';
 // // import Solution from '../components/Solution';
 // import GoodCases from '../components/GoodCases';
@@ -12,7 +12,8 @@ const Index = () => {
   return (
     <main className="home-main">
       <Brand />
-      <Test />
+      <Page1 />
+      <Page2 />
 
       {/*<GoodCases />
        <Advantage />
