@@ -2,10 +2,11 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { Row, Col } from 'antd';
+import 'antd/dist/antd.css';
 import { page1 } from '../../common/data';
 import './index.less';
 
-const Page1 = () => {
+const Advantage = () => {
   const children = page1.map((d, i) => (
     <QueueAnim
       component={Col}
@@ -40,4 +41,4 @@ const Page1 = () => {
     </div>
   );
 };
-export default Page1;
+export default Advantage;

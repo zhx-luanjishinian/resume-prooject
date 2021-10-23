@@ -1,7 +1,9 @@
 import React from 'react';
 import Brand from './components/Brand';
-import Page1 from './components/Advantage';
-import Page2 from './components/Product';
+import Advantage from './components/Advantage';
+import Product from './components/Product';
+import { Feature60DataSource } from './common/data';
+import Feature6 from './components/serviceData';
 // // import Solution from '../components/Solution';
 // import GoodCases from '../components/GoodCases';
 // import Partner from '../components/Partner';
@@ -12,9 +14,9 @@ const Index = () => {
   return (
     <main className="home-main">
       <Brand />
-      <Page1 />
-      <Page2 />
-
+      <Feature6 id="Feature6_0" key="Feature6_0" />,
+      <Advantage />
+      <Product />
       {/*<GoodCases />
        <Advantage />
       <Partner />
