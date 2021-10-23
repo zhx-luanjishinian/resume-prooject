@@ -254,3 +254,12 @@ export const footer = [
   { text: '模板开发工具', src: '#' },
   { text: '联系我们', src: 'mailto:zhao.wuz@antfin.com' },
 ];
+export const Feature60DataSource = {
+  //   wrapper: { className: 'home-page-wrapper feature6-wrapper' },
+  //   OverPack: { className: 'home-page feature6', playScale: 0.3 },
+  Carousel: {
+    className: 'feature6-content',
+    dots: false,
+    //     wrapper:,
+  },
+};

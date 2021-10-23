@@ -5,7 +5,12 @@ import { Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import { page1 } from '../../common/data';
 import './index.less';
+<<<<<<< HEAD
 const Page1 = () => {
+=======
+
+const Advantage = () => {
+>>>>>>> dev
   const children = page1.map((d, i) => (
     <QueueAnim
       component={Col}
@@ -40,4 +45,4 @@ const Page1 = () => {
     </div>
   );
 };
-export default Page1;
+export default Advantage;
