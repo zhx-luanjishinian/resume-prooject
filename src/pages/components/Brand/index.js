@@ -62,19 +62,6 @@ const Brand = () => {
         </div>
       </div>
       <div className="calculate-right info">
-        {/* <video
-          id="lp-video"
-          autoplay="autoplay"
-          muted="muted"
-          loop="loop"
-          poster=""
-          width="800px"
-          preload="auto"
-          playsinline="playsinline"
-          webkit-playsinline="true"
-          autostart="0"
-          src="https://files.wondercv.com/%E9%A6%96%E9%A1%B5%E8%A7%86%E9%A2%91_v3.ogg"
-        ></video> */}
         <BannerImage />
       </div>
     </section>

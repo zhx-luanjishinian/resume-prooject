@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'antd';
 
 export const page1 = [
   {
@@ -254,12 +255,133 @@ export const footer = [
   { text: '模板开发工具', src: '#' },
   { text: '联系我们', src: 'mailto:zhao.wuz@antfin.com' },
 ];
-export const Feature60DataSource = {
-  //   wrapper: { className: 'home-page-wrapper feature6-wrapper' },
-  //   OverPack: { className: 'home-page feature6', playScale: 0.3 },
-  Carousel: {
-    className: 'feature6-content',
-    dots: false,
-    //     wrapper:,
+export const userInfo = [
+  {
+    id: 1,
+    url: 'https://files.wondercv.com/%E5%BC%A0%E6%99%93%E6%B6%B5.png',
+    name: '张涵予',
+    desc: '基金人力资源招聘总监',
+    content:
+      '我每年会看上千份简历，好的简历基本上一眼就能看出来。大多数求职者即便失败了也不会意识到，从简历的样式和逻辑他就已经被刷下去了。说实话，10秒内看不到重点的简历就会让我很烦躁，尤其是一些各种图表、文字没有内容、简历过长等等信息展示不清楚的简历都不会再看第二眼。超级简历生成的简历非常清晰专业，让人眼前一亮，我希望我收到的每份简历都能是这个样子。',
+  },
+  {
+    id: 2,
+    url: 'https://files.wondercv.com/%E5%BC%A0%E6%99%93%E6%B6%B5.png',
+    name: '马学明',
+    desc: '基金人力资源招聘总监',
+    content:
+      '我每年会看上千份简历，好的简历基本上一眼就能看出来。大多数求职者即便失败了也不会意识到，从简历的样式和逻辑他就已经被刷下去了。说实话，10秒内看不到重点的简历就会让我很烦躁，尤其是一些各种图表、文字没有内容、简历过长等等信息展示不清楚的简历都不会再看第二眼。超级简历生成的简历非常清晰专业，让人眼前一亮，我希望我收到的每份简历都能是这个样子。',
+  },
+  {
+    id: 3,
+    url: 'https://files.wondercv.com/%E5%BC%A0%E6%99%93%E6%B6%B5.png',
+    name: '王 鑫',
+    desc: '基金人力资源招聘总监',
+    content:
+      '我每年会看上千份简历，好的简历基本上一眼就能看出来。大多数求职者即便失败了也不会意识到，从简历的样式和逻辑他就已经被刷下去了。说实话，10秒内看不到重点的简历就会让我很烦躁，尤其是一些各种图表、文字没有内容、简历过长等等信息展示不清楚的简历都不会再看第二眼。超级简历生成的简历非常清晰专业，让人眼前一亮，我希望我收到的每份简历都能是这个样子。',
+  },
+  {
+    id: 4,
+    url: 'https://files.wondercv.com/%E5%BC%A0%E6%99%93%E6%B6%B5.png',
+    name: '刘凯',
+    desc: '基金人力资源招聘总监',
+    content:
+      '我每年会看上千份简历，好的简历基本上一眼就能看出来。大多数求职者即便失败了也不会意识到，从简历的样式和逻辑他就已经被刷下去了。说实话，10秒内看不到重点的简历就会让我很烦躁，尤其是一些各种图表、文字没有内容、简历过长等等信息展示不清楚的简历都不会再看第二眼。超级简历生成的简历非常清晰专业，让人眼前一亮，我希望我收到的每份简历都能是这个样子。',
+  },
+];
+
+export const isImg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?/;
+export const getChildrenToRender = (item, i) => {
+  let tag = item.name.indexOf('title') === 0 ? 'h1' : 'div';
+  tag = item.href ? 'a' : tag;
+  let children =
+    typeof item.children === 'string' && item.children.match(isImg)
+      ? React.createElement('img', { src: item.children, alt: 'img' })
+      : item.children;
+  if (item.name.indexOf('button') === 0 && typeof item.children === 'object') {
+    children = React.createElement(Button, {
+      ...item.children,
+    });
+  }
+  return React.createElement(tag, { key: i.toString(), ...item }, children);
+};
+export const Footer10DataSource = {
+  wrapper: { className: 'home-page-wrapper footer1-wrapper' },
+  OverPack: { className: 'footer1', playScale: 0.2 },
+  block: {
+    className: 'home-page',
+    gutter: 0,
+    children: [
+      {
+        name: 'block0',
+        xs: 24,
+        md: 6,
+        className: 'block',
+        title: {
+          className: 'logo',
+          children: 'https://zos.alipayobjects.com/rmsportal/qqaimmXZVSwAhpL.svg',
+        },
+        childWrapper: {
+          className: 'slogan',
+          children: [
+            {
+              name: 'content0',
+              children: 'Animation specification and components of Ant Design.',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        xs: 24,
+        md: 6,
+        className: 'block',
+        title: { children: '产品' },
+        childWrapper: {
+          children: [
+            { name: 'link0', href: '#', children: '优加实习' },
+            { name: 'link1', href: '#', children: '优加小程序' },
+            { name: 'link2', href: '#', children: '优加博客' },
+            { name: 'link3', href: '#', children: '优加刷题' },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        xs: 24,
+        md: 6,
+        className: 'block',
+        title: { children: '关于' },
+        childWrapper: {
+          children: [
+            { href: '#', name: 'link0', children: 'FAQ' },
+            { href: '#', name: 'link1', children: '联系我们' },
+          ],
+        },
+      },
+      {
+        name: 'block3',
+        xs: 24,
+        md: 6,
+        className: 'block',
+        title: { children: '资源' },
+        childWrapper: {
+          children: [
+            { href: '#', name: 'link0', children: 'Ant Design' },
+            { href: '#', name: 'link1', children: 'Ant Motion' },
+          ],
+        },
+      },
+    ],
+  },
+  copyrightWrapper: { className: 'copyright-wrapper' },
+  copyrightPage: { className: 'home-page' },
+  copyright: {
+    className: 'copyright',
+    children: (
+      <span>
+        ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights Reserved
+      </span>
+    ),
   },
 };

@@ -25,7 +25,7 @@ const Home = () => {
         </Switch>
       </BrowserRouter>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -2,8 +2,10 @@ import React from 'react';
 import Brand from './components/Brand';
 import Advantage from './components/Advantage';
 import Product from './components/Product';
-import { Feature60DataSource } from './common/data';
-import Feature6 from './components/serviceData';
+import ServiceData from './components/serviceData';
+import Teachvideo from './components/Teachvideo';
+import UserFeedback from './components/UserFeedback';
+import StartUse from './components/startUse';
 // // import Solution from '../components/Solution';
 // import GoodCases from '../components/GoodCases';
 // import Partner from '../components/Partner';
@@ -14,9 +16,12 @@ const Index = () => {
   return (
     <main className="home-main">
       <Brand />
-      <Feature6 id="Feature6_0" key="Feature6_0" />,
+      <ServiceData id="Feature6_0" key="Feature6_0" />,
       <Advantage />
+      <Teachvideo />
       <Product />
+      <UserFeedback />
+      <StartUse />
       {/*<GoodCases />
        <Advantage />
       <Partner />
