@@ -53,6 +53,7 @@
     "postcss-safe-parser": "5.0.2",
     "prompts": "2.4.0",
     "qrcode.react": "^1.0.1",
+    "rc-banner-anim": "^2.4.5",
     "rc-queue-anim": "^1.4.0",
     "rc-scroll-anim": "^2.1.0",
     "rc-tween-one": "^3.0.0-beta.7",

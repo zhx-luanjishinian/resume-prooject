@@ -1,0 +1,136 @@
+@text-color: #f64;
+@homepage: userfeedback-home-page;
+.@{homepage}-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .@{homepage} {
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    will-change: transform;
+  }
+  .title-wrapper > h1,
+  > h1 {
+    font-size: 42px;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei,
+      Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+    color: @text-color;
+    margin-bottom: 16px;
+  }
+  .title-wrapper {
+    margin: 0 auto 64px;
+    text-align: center;
+    .title-content {
+      color: #9c9c9c;
+      font-size: 30px;
+    }
+  }
+}
+
+.@{homepage} {
+  padding: 108px 24px;
+}
+@userfeedback: userfeedback;
+.@{userfeedback}-wrapper {
+  min-height: 720px;
+  background: #fff;
+  .@{userfeedback} {
+    height: 100%;
+    overflow: hidden;
+    &-video {
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 984px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 0 30px 0 rgb(0 9 85 / 8%);
+      video {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{userfeedback}-wrapper {
+    min-height: 350px;
+    .@{userfeedback} {
+      overflow: hidden;
+      width: 90%;
+      margin: auto;
+      &-video {
+        top: 15%;
+        background: url('https://zos.alipayobjects.com/rmsportal/HZgzhugQZkqUwBVeNyfz.jpg')
+          no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.user-feedback {
+  height: 320px;
+}
+.banner-content {
+  margin: 0 auto;
+  height: 260px;
+  padding: 50px 80px 60px;
+}
+.banner-content-top {
+  display: flex;
+  display: -webkit-box;
+  margin-bottom: 20px;
+
+  .info {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    .info-name {
+      font-size: 20px;
+      font-weight: 400;
+      color: #202329;
+      line-height: 35px;
+    }
+    .info-desc {
+      font-size: 16px;
+      font-weight: 400;
+      color: #9c9c9c;
+      line-height: 22px;
+    }
+  }
+}
+.banner-content-bottom {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 28px;
+}
+.banner-user {
+  height: 300px;
+}
+.banner-user-elem {
+  //text-align: center;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+.banner-user-elem .banner-user-title {
+  font-size: 32px;
+  top: 40%;
+}
+.banner-user-elem .banner-user-text {
+  top: 40%;
+}
+.banner-anim-elem .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}

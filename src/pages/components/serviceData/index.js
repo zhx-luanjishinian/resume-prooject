@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import QueueAnim from 'rc-queue-anim';
 import { Carousel as AntCarousel, Row, Col } from 'antd';
-import { Feature60DataSource } from '../../common/data';
+// import { Feature60DataSource } from '../../common/data';
 import 'antd/dist/antd.css';
 import TweenOne from 'rc-tween-one';
 import Children from 'rc-tween-one/lib/plugin/ChildrenPlugin';
 import './index.less';
-const dataSource = { Feature60DataSource };
+// const dataSource = { Feature60DataSource };
 TweenOne.plugins.push(Children);
-const Feature6 = () => {
+const ServiceData = () => {
   const [current, setCurrent] = useState(0);
   console.log(current.current);
   const carouselRef = React.createRef();
@@ -225,10 +225,10 @@ const Feature6 = () => {
     <div className="home-page-wrapper feature6-wrapper">
       <div>
         <OverPack className="home-page feature6" playScale={0.3}>
-          {getChildrenToRender(dataSource)}
+          {getChildrenToRender()}
         </OverPack>
       </div>
     </div>
   );
 };
-export default Feature6;
+export default ServiceData;
