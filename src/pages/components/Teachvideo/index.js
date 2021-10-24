@@ -27,8 +27,8 @@ function Teachvideo() {
   };
 
   return (
-    <div className="home-page-wrapper content4-wrapper">
-      <div className="home-page content4">
+    <div className="teach-Video-wrapper content4-wrapper">
+      <div className="teach-Video content4">
         <div key="title" className="title-wrapper">
           {titleWrapper.children.map(getChildrenToRender)}
         </div>

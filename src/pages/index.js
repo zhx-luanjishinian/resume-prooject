@@ -6,6 +6,7 @@ import ServiceData from './components/serviceData';
 import Teachvideo from './components/Teachvideo';
 import UserFeedback from './components/UserFeedback';
 import StartUse from './components/startUse';
+import Process from './components/Process';
 // // import Solution from '../components/Solution';
 // import GoodCases from '../components/GoodCases';
 // import Partner from '../components/Partner';
@@ -19,6 +20,7 @@ const Index = () => {
       <ServiceData id="Feature6_0" key="Feature6_0" />,
       <Advantage />
       <Teachvideo />
+      <Process />
       <Product />
       <UserFeedback />
       <StartUse />

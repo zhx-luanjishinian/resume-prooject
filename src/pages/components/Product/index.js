@@ -7,7 +7,7 @@ import 'antd/dist/antd.css';
 import { page2 } from '../../common/data';
 import './index.less';
 
-export default function Page2() {
+export default function Product() {
   const children = page2.map((d, i) => {
     if (i > 2) {
       return null;

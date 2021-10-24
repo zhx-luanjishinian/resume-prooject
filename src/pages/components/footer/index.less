@@ -6,11 +6,11 @@
 @template-footer-text-color: #999;
 @text-color: #999;
 @primary-color: #ff3d3d;
-@homepage: home-page;
+@homepage: footer;
 .@{homepage}-wrapper {
   width: 100%;
   position: relative;
-  overflow: hidden;
+  //   overflow: hidden;
   .@{homepage} {
     height: 100%;
     max-width: 1200px;
@@ -40,7 +40,7 @@
   min-height: 360px;
   color: @template-footer-text-color;
   .footer1 {
-    .home-page {
+    .footer {
       padding: 64px 24px 80px;
     }
   }
@@ -70,7 +70,7 @@
   .copyright-wrapper {
     width: 100%;
     //border-top: 1px solid fade(@line-color, 10);
-    .home-page {
+    .footer {
       padding: 0 24px;
       overflow: hidden;
     }
@@ -87,7 +87,7 @@
     min-height: 550px;
     &-wrapper {
       .footer1 {
-        .home-page {
+        .footer {
           padding: 64px 24px 32px;
         }
       }
@@ -117,7 +117,7 @@
     }
     .copyright {
       &-wrapper {
-        .home-page {
+        .footer {
           padding: 0;
           .copyright {
             font-size: 12px;

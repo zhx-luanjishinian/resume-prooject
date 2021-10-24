@@ -30,7 +30,7 @@ class Footer extends React.Component {
 
   render() {
     const block = {
-      className: 'home-page',
+      className: 'footer',
       gutter: 0,
       children: [
         {
@@ -105,7 +105,7 @@ class Footer extends React.Component {
     };
     const childrenToRender = this.getLiChildren(block.children);
     return (
-      <div className="home-page-wrapper footer1-wrapper">
+      <div className="footer-wrapper footer1-wrapper">
         <OverPack className="footer1" playScale={0.2}>
           <QueueAnim
             type="bottom"
@@ -113,7 +113,7 @@ class Footer extends React.Component {
             leaveReverse
             component={Row}
             componentProps={{ gutter: 0 }}
-            className="home-page"
+            className="footer"
           >
             {childrenToRender}
           </QueueAnim>
@@ -122,7 +122,7 @@ class Footer extends React.Component {
             key="copyright"
             className="copyright-wrapper"
           >
-            <div className="home-page">
+            <div className="footer">
               <div className="copyright">{copyright.children}</div>
             </div>
           </TweenOne>
