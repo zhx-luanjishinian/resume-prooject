@@ -25,7 +25,7 @@ const Process = () => {
       {
         title: '1.专业模版',
         desc: '由人力资源专家设计并推荐',
-        url: 'https://files.wondercv.com/homepage-pc/tab_icon_1.png',
+        url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%B6%88%E6%81%AF.png?sign=5d0a7900ef5893bbdd634a11ae01936d&t=1635179949',
         children: [
           {
             md: 8,
@@ -71,7 +71,7 @@ const Process = () => {
       {
         title: '2.简历修改',
         desc: '一对一简历修改',
-        url: 'https://files.wondercv.com/homepage-pc/tab_icon_2.png',
+        url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E7%82%B9%E8%AF%84.png?sign=afd4a39e78224f19e301d36004d2e1d6&t=1635180017',
         children: [
           {
             md: 8,
@@ -117,7 +117,7 @@ const Process = () => {
       {
         title: '3.模拟面试',
         desc: '在职HR专业模拟面试',
-        url: 'https://files.wondercv.com/homepage-pc/tab_icon_3.png',
+        url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E9%93%B6%E8%A1%8C%E5%8D%A1%20(1).png?sign=9fa28ce250403f714c59f0f3087f8b78&t=1635180053',
         children: [
           {
             md: 8,
@@ -163,7 +163,7 @@ const Process = () => {
       {
         title: '4.内推直达',
         desc: '简历内推，高通过率',
-        url: 'https://files.wondercv.com/homepage-pc/tab_icon_4.png',
+        url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E5%85%AC%E5%8F%B8.png?sign=3a34ab1434636ec020fe9af78673c50e&t=1635180074',
         children: [
           {
             md: 8,
@@ -236,7 +236,12 @@ const Process = () => {
               {item.desc}
             </div>
           </div>
-          ,
+          {index < 3 && (
+            <image
+              src="https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E7%AE%AD%E5%A4%B4.png?sign=f408ff00788b04ecbe631ef456521cd3&t=1635179861"
+              className="image"
+            />
+          )}
         </>,
       );
       const childrenItem = item.children.map(($item, i) => {
@@ -289,7 +294,6 @@ const Process = () => {
         <div className="Process-title-wrapper" key="title">
           <div className="Process-title">
             {titleToRender}
-
             <div
               className="Process-title-bar-wrapper"
               style={{
@@ -301,6 +305,7 @@ const Process = () => {
             </div>
           </div>
         </div>
+
         <AntCarousel
           className="Process-content"
           dots={false}
@@ -319,6 +324,7 @@ const Process = () => {
       <div>
         <OverPack className="home-page Process" playScale={0.3}>
           {getChildrenToRender()}
+          <div className="Process-show"></div>
         </OverPack>
       </div>
     </div>
