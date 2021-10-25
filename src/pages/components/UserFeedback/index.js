@@ -31,8 +31,8 @@ function UserFeedback() {
   };
 
   return (
-    <div className="home-page-wrapper userfeedback-wrapper">
-      <div className="userfeedback-home-page userfeedback">
+    <div className="user-feekback-wrapper userfeedback-wrapper">
+      <div className="user-feekback userfeedback">
         <div key="title" className="title-wrapper">
           {titleWrapper.children.map(getChildrenToRender)}
         </div>
