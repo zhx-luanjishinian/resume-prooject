@@ -207,12 +207,6 @@ const Process = () => {
         ],
       },
     ];
-
-    const Carousel = {
-      className: 'Process-content',
-      dots: false,
-    };
-    const { ...carouselProps } = Carousel;
     const titleToRender = [];
 
     const childrenToRender = childWrapper.map((item, index) => {
@@ -228,18 +222,23 @@ const Process = () => {
             <Avatar
               style={{ paddingTop: 3 }}
               src={<Image src={item.url} style={{ width: 20, marginRight: 5, marginTop: 1 }} />}
-            >
-              U
-            </Avatar>
+            />
             {item.title}
             <div className={index === current ? `Process-title-desc active` : 'Process-title-desc'}>
               {item.desc}
             </div>
           </div>
+
           {index < 3 && (
-            <image
-              src="https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E7%AE%AD%E5%A4%B4.png?sign=f408ff00788b04ecbe631ef456521cd3&t=1635179861"
-              className="image"
+            <Avatar
+              style={{ paddingTop: 2, width: 51, marginRight: 20, left: 282 + index * 282 }}
+              className="Process-title-image"
+              src={
+                <Image
+                  src="https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E7%AE%AD%E5%A4%B4.png?sign=f408ff00788b04ecbe631ef456521cd3&t=1635179861"
+                  style={{ width: 51, marginRight: 5, marginTop: 1 }}
+                />
+              }
             />
           )}
         </>,
@@ -251,19 +250,19 @@ const Process = () => {
         return (
           <Col {...childProps} key={i.toString()}>
             <TweenOne
-              {...numberProps}
-              animation={{
-                Children: {
-                  value: parseFloat(numberChild),
-                  floatLength:
-                    parseFloat(numberChild) - Math.floor(parseFloat(numberChild)) > 0 ? 2 : 0,
-                  formatMoney: true,
-                },
-                duration: 1000,
-                delay: 300,
-                ease: 'easeInOutCirc',
-              }}
-              component="span"
+            //               {...numberProps}
+            //               animation={{
+            //                 Children: {
+            //                   value: parseFloat(numberChild),
+            //                   floatLength:
+            //                     parseFloat(numberChild) - Math.floor(parseFloat(numberChild)) > 0 ? 2 : 0,
+            //                   formatMoney: true,
+            //                 },
+            //                 duration: 1000,
+            //                 delay: 300,
+            //                 ease: 'easeInOutCirc',
+            //               }}
+            //               component="span"
             >
               0
             </TweenOne>
@@ -298,7 +297,7 @@ const Process = () => {
               className="Process-title-bar-wrapper"
               style={{
                 width: `${width}%`,
-                left: `${width * current}%`,
+                left: `${3 + width * current}%`,
               }}
             >
               <em className="Process-title-bar" />
@@ -308,10 +307,11 @@ const Process = () => {
 
         <AntCarousel
           className="Process-content"
-          dots={false}
+          //           dots={false}
           key="carousel"
           infinite={false}
           beforeChange={onBeforeChange}
+          autoplay
         >
           {childrenToRender}
         </AntCarousel>
