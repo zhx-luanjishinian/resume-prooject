@@ -6,6 +6,7 @@ import 'antd/dist/antd.css';
 import TweenOne from 'rc-tween-one';
 import Children from 'rc-tween-one/lib/plugin/ChildrenPlugin';
 import './index.less';
+// import 'imagehover.css/css';
 TweenOne.plugins.push(Children);
 const Process = () => {
   const [current, setCurrent] = useState(0);
@@ -28,43 +29,24 @@ const Process = () => {
         url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%B6%88%E6%81%AF.png?sign=5d0a7900ef5893bbdd634a11ae01936d&t=1635179949',
         children: [
           {
-            md: 8,
+            md: 12,
             xs: 24,
-            className: 'Process-number-wrapper',
+            className: 'Process-left-wrapper',
+            url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/tab_1.png?sign=2b36702c84c433474b553e3908273115&t=1635590684',
             name: 'child0',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '1116',
-            },
-            children: { className: 'Process-text', children: '累计使用人数' },
           },
           {
-            md: 8,
+            md: 10,
             xs: 24,
-            className: 'Process-number-wrapper',
-            name: 'child1',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '万' },
-              toText: true,
-              children: '1.2',
-            },
-            children: { className: 'Process-text', children: '累计访问量' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            className: 'Process-number-wrapper',
-            name: 'child2',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '次' },
-              toText: true,
-              children: '210',
-            },
-            children: { className: 'Process-text', children: '日活跃量' },
+            offset: 1,
+            tag: '更实惠',
+            title: ['由人力资源专家', '设计并推荐'],
+            content: [
+              '涵盖 15+ 大行业，300+ 岗位，5000+ 简历模板，1,600,000+ 字简历范文，满足全方位简历需求。',
+
+              '所有模板均由专业 HR 挑选，确保格式、排版、措辞符合行业规范，简历通过率更有保障。',
+            ],
+            className: 'Process-right-wrapper',
           },
         ],
       },
@@ -74,43 +56,24 @@ const Process = () => {
         url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E7%82%B9%E8%AF%84.png?sign=afd4a39e78224f19e301d36004d2e1d6&t=1635180017',
         children: [
           {
-            md: 8,
+            md: 12,
             xs: 24,
-            name: 'child0',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '116',
-            },
-            children: { className: 'Process-text', children: '简历修改人员' },
+            url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/tab_2.png?sign=22845b9d6fd88e86858600e2f9759c8a&t=1635593307',
+            className: 'Process-left-wrapper',
           },
           {
-            md: 8,
+            md: 10,
             xs: 24,
+            offset: 1,
+            tag: '更划算',
+            title: ['AI 算法匹配简历和职位', '大幅提高求职效率'],
+            content: [
+              '根据多维度评估简历综合竞争力，并且提供精准优化建议，帮你清晰定位，扬长补短。',
+
+              '智能纠错 20 大简历常见问题，从 HR 角度审查简历常见错误，预先发现问题，避免踩坑。',
+            ],
             name: 'child1',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '9123',
-            },
-            children: { className: 'Process-text', children: '模拟面试老师' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            name: 'child2',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '万' },
-              toText: true,
-              children: '1.1',
-            },
-            children: { className: 'Process-text', children: '内推成功人数' },
+            className: 'Process-right-wrapper',
           },
         ],
       },
@@ -120,43 +83,26 @@ const Process = () => {
         url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E9%93%B6%E8%A1%8C%E5%8D%A1%20(1).png?sign=9fa28ce250403f714c59f0f3087f8b78&t=1635180053',
         children: [
           {
-            md: 8,
+            md: 12,
             xs: 24,
-            name: 'child0',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '116',
-            },
-            children: { className: 'Process-text', children: '简历修改人员' },
+            className: 'Process-left-wrapper',
+            url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/tab_3.png?sign=9dc300066e5cf871e18d33bcd23192a1&t=1635609590',
           },
           {
-            md: 8,
+            md: 10,
             xs: 24,
+            tag: '更便捷',
+            title: ['智能推送简历', '让更多机会找到你'],
+            content: [
+              ' 打开智能推送，即可被推荐给热招公司，让HR 发现适合的你。',
+
+              'HR主动邀约成功率极高，实时聊天沟通，高效面试快速入职。',
+
+              '屏蔽在职公司，个人隐私保密，没有不明信息骚扰的求职环境。',
+            ],
+            offset: 1,
             name: 'child1',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '9123',
-            },
-            children: { className: 'Process-text', children: '模拟面试老师' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            name: 'child2',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '万' },
-              toText: true,
-              children: '1.1',
-            },
-            children: { className: 'Process-text', children: '内推成功人数' },
+            className: 'Process-right-wrapper',
           },
         ],
       },
@@ -166,43 +112,24 @@ const Process = () => {
         url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E5%85%AC%E5%8F%B8.png?sign=3a34ab1434636ec020fe9af78673c50e&t=1635180074',
         children: [
           {
-            md: 8,
+            md: 12,
             xs: 24,
+            className: 'Process-left-wrapper',
+            url: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/tab_4.png?sign=707873671b3be88bee7787d9be5b313a&t=1635609668',
+          },
+          {
+            md: 10,
+            xs: 24,
+            title: [`零错误的专业简历`, `更能在竞争者中脱颖而出`],
+            tag: '更高效',
+            offset: 1,
+            content: [
+              '根据技能、专业、相关经验等多维度算法解析简历核心标签，自动匹配合适职位。',
+
+              '节省筛选职位工作量，挖掘未发觉的新机会，提高简历通过率，快速拿到心动的Offer。',
+            ],
             name: 'child0',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '116',
-            },
-            children: { className: 'Process-text', children: '简历修改人员' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            name: 'child1',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '人' },
-              toText: true,
-              children: '9123',
-            },
-            children: { className: 'Process-text', children: '模拟面试老师' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            name: 'child2',
-            className: 'Process-number-wrapper',
-            number: {
-              className: 'Process-number',
-              unit: { className: 'Process-unit', children: '万' },
-              toText: true,
-              children: '1.1',
-            },
-            children: { className: 'Process-text', children: '内推成功人数' },
+            className: 'Process-right-wrapper',
           },
         ],
       },
@@ -221,7 +148,13 @@ const Process = () => {
           >
             <Avatar
               style={{ paddingTop: 3 }}
-              src={<Image src={item.url} style={{ width: 20, marginRight: 5, marginTop: 1 }} />}
+              src={
+                <Image
+                  preview={false}
+                  src={item.url}
+                  style={{ width: 20, marginRight: 5, marginTop: 1 }}
+                />
+              }
             />
             {item.title}
             <div className={index === current ? `Process-title-desc active` : 'Process-title-desc'}>
@@ -235,6 +168,7 @@ const Process = () => {
               className="Process-title-image"
               src={
                 <Image
+                  preview={false}
                   src="https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E7%AE%AD%E5%A4%B4.png?sign=f408ff00788b04ecbe631ef456521cd3&t=1635179861"
                   style={{ width: 51, marginRight: 5, marginTop: 1 }}
                 />
@@ -244,36 +178,39 @@ const Process = () => {
         </>,
       );
       const childrenItem = item.children.map(($item, i) => {
-        const { number, children: child, ...childProps } = $item;
-        const numberChild = number.children.replace(/[^0-9.-]/g, '');
-        const { unit, toText, ...numberProps } = number;
+        const { ...childProps } = $item;
         return (
           <Col {...childProps} key={i.toString()}>
-            <TweenOne
-            //               {...numberProps}
-            //               animation={{
-            //                 Children: {
-            //                   value: parseFloat(numberChild),
-            //                   floatLength:
-            //                     parseFloat(numberChild) - Math.floor(parseFloat(numberChild)) > 0 ? 2 : 0,
-            //                   formatMoney: true,
-            //                 },
-            //                 duration: 1000,
-            //                 delay: 300,
-            //                 ease: 'easeInOutCirc',
-            //               }}
-            //               component="span"
-            >
-              0
-            </TweenOne>
-            {unit && <span {...unit}>{unit.children}</span>}
-            <p {...child}>{child.children}</p>
+            {$item.url ? (
+              <Image src={$item.url} preview={false} />
+            ) : (
+              <div className="Process-right-wrapper-item">
+                <span className="Process-right-wrapper-item-tag">{$item.tag}</span>
+                <span className="Process-right-wrapper-item-title">
+                  {$item.title[0]}
+                  <br />
+                  {$item.title[1]}
+                </span>
+                <div className="Process-right-wrapper-item-content">
+                  {$item.content.map((item) => {
+                    return <p>{item}</p>;
+                  })}
+                </div>
+                <div className="Process-right-wrapper-item-Button">立即制作专业简历</div>
+              </div>
+            )}
           </Col>
         );
       });
       return (
         <div key={index.toString()}>
-          <QueueAnim type="bottom" component={Row} className="Process-item">
+          <QueueAnim
+            type="bottom"
+            component={Row}
+            className="Process-item"
+            //             style={{ justifyContent: 'center' }}
+            //             componentProps={{ gutter: 120 }}
+          >
             {childrenItem}
           </QueueAnim>
         </div>
@@ -307,7 +244,6 @@ const Process = () => {
 
         <AntCarousel
           className="Process-content"
-          //           dots={false}
           key="carousel"
           infinite={false}
           beforeChange={onBeforeChange}
