@@ -38,16 +38,7 @@ const Header = () => {
               //active: item.link === pathname,
             })}
             onClick={() => {
-              //           radar.customLog({
-              //             eventType: EVENT_TYPE.TAB_CLICK,
-              //             page: 'Home2021',
-              //             message: el.text,
-              //             extraInfo: {
-              //               link: el.link,
-              //               text: el.text,
-              //             },
-              //           });
-              //           history.push(el.link);
+              history.push(item.link);
             }}
           >
             <span className={classnames('node')} />
@@ -58,7 +49,7 @@ const Header = () => {
           <div
             className="login"
             onClick={() => {
-              history.push('/index');
+              history.push('/make');
             }}
           >
             <span className="text">进入平台</span>
@@ -98,7 +89,7 @@ export const HeaderItems = [
   },
   {
     text: '简历修改',
-    link: '/',
+    link: '/make',
   },
   {
     text: '模拟面试',

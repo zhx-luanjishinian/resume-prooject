@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import DataAnimation from '../../common/DataAnimation';
 import AnimationBtn from '../AnimationBtn';
 import BannerImage from './BannerImage';
-
+import { useHistory } from 'react-router-dom';
 import './index.less';
 
 const Brand = () => {
   const GLOBAL_CFG = {
     loop: true,
   };
-
+  const history = useHistory();
   useEffect(() => {
     document.querySelectorAll('.brand .animation-item').forEach((el, index, arr) => {
       el.style.transitionDelay = `${index * 0.05}s`;
@@ -50,6 +50,9 @@ const Brand = () => {
             //                   scrollTopSmoothTo(homeDom, homeDom.scrollHeight - window.innerHeight);
             //                 }
             //               }
+            //             }}
+            //             onClick={() => {
+            //               history.push('/make');
             //             }}
             text="开始制作"
           />
