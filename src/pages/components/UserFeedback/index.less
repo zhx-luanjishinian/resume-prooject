@@ -38,14 +38,13 @@
   background: #fff;
   .@{userfeedback} {
     height: 100%;
-    overflow: hidden;
+
     &-video {
       border-radius: 10px;
-      overflow: hidden;
       max-width: 984px;
       margin: auto;
       background: #fff;
-      //       box-shadow: 0 0 30px 0 rgb(0 9 85 / 8%);
+      box-shadow: 0 0 30px 0 rgb(0 9 85 / 8%);
       video {
         display: block;
         margin: auto;
@@ -53,7 +52,34 @@
     }
   }
 }
-
+.banner-user {
+  .banner-anim-arrow-default {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    top: 45%;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  .banner-anim-arrow-default:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .banner-anim-arrow-default.next:before,
+  .banner-anim-arrow-default.prev:before,
+  .banner-anim-arrow-default.next:after,
+  .banner-anim-arrow-default.prev:after {
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    display: block;
+    content: ' ';
+    position: absolute;
+    margin-left: 18px;
+  }
+}
 @media screen and (max-width: 767px) {
   .@{userfeedback}-wrapper {
     min-height: 350px;

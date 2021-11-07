@@ -42,7 +42,7 @@ function UserFeedback() {
             animation={{ ...animation, delay: 300 }}
             className="userfeedback-video"
           >
-            <BannerAnim prefixCls="banner-user" autoPlay autoPlaySpeed={6000}>
+            <BannerAnim prefixCls="banner-user" autoPlay autoPlaySpeed={2000}>
               {userInfo.map((item) => {
                 return (
                   <Element
