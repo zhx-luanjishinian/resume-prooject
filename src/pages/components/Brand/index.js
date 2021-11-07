@@ -51,9 +51,9 @@ const Brand = () => {
             //                 }
             //               }
             //             }}
-            //             onClick={() => {
-            //               history.push('/make');
-            //             }}
+            onClick={() => {
+              history.push('/make');
+            }}
             text="开始制作"
           />
           <a href="https://e.kuaishou.com/#/e/home" target="_blank" rel="noreferrer">

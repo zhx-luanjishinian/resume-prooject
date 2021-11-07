@@ -10,7 +10,6 @@ import './index.less';
 TweenOne.plugins.push(Children);
 const Process = () => {
   const [current, setCurrent] = useState(0);
-  console.log(current.current);
   const carouselRef = React.createRef();
   const onTitleClick = (_, i) => {
     const currentCarouselRef = carouselRef.current.childRefs.carousel;
@@ -140,7 +139,7 @@ const Process = () => {
       titleToRender.push(
         <>
           <div
-            key={index.toString()}
+            key={item.title}
             onClick={(e) => {
               onTitleClick(e, index);
             }}
@@ -164,6 +163,7 @@ const Process = () => {
 
           {index < 3 && (
             <Avatar
+              key={item.title}
               style={{ paddingTop: 2, width: 51, marginRight: 20, left: 282 + index * 282 }}
               className="Process-title-image"
               src={
@@ -180,11 +180,14 @@ const Process = () => {
       const childrenItem = item.children.map(($item, i) => {
         const { ...childProps } = $item;
         return (
-          <Col {...childProps} key={i.toString()}>
+          <Col {...childProps} key={item.url}>
             {$item.url ? (
               <Image src={$item.url} preview={false} />
             ) : (
-              <div className="Process-right-wrapper-item">
+              <TweenOne
+                className="Process-right-wrapper-item"
+                animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+              >
                 <span className="Process-right-wrapper-item-tag">{$item.tag}</span>
                 <span className="Process-right-wrapper-item-title">
                   {$item.title[0]}
@@ -197,13 +200,13 @@ const Process = () => {
                   })}
                 </div>
                 <div className="Process-right-wrapper-item-Button">立即制作专业简历</div>
-              </div>
+              </TweenOne>
             )}
           </Col>
         );
       });
       return (
-        <div key={index.toString()}>
+        <div key={item.title}>
           <QueueAnim
             type="bottom"
             component={Row}
@@ -248,6 +251,7 @@ const Process = () => {
           infinite={false}
           beforeChange={onBeforeChange}
           autoplay
+          easing="ease-in"
         >
           {childrenToRender}
         </AntCarousel>

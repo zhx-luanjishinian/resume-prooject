@@ -330,14 +330,14 @@
     js-tokens "^4.0.0"
 
 "@babel/parser@^7.1.0", "@babel/parser@^7.12.3", "@babel/parser@^7.14.7", "@babel/parser@^7.16.0", "@babel/parser@^7.7.0":
-  version "7.16.0"
-  resolved "https://npm.corp.kuaishou.com/@babel%2fparser/-/parser-7.16.0.tgz#cf147d7ada0a3655e79bf4b08ee846f00a00a295"
-  integrity sha1-zxR9etoKNlXnm/SwjuhG8AoAopU=
+  version "7.16.2"
+  resolved "https://npm.corp.kuaishou.com/@babel%2fparser/-/parser-7.16.2.tgz#3723cd5c8d8773eef96ce57ea1d9b7faaccd12ac"
+  integrity sha1-NyPNXI2Hc+75bOV+odm3+qzNEqw=
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.16.0":
-  version "7.16.0"
-  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-bugfix-safari-id-destructuring-collision-in-function-expression/-/plugin-bugfix-safari-id-destructuring-collision-in-function-expression-7.16.0.tgz#efb7f147042aca34ce8156a055906a7abaadeaf0"
-  integrity sha1-77fxRwQqyjTOgVagVZBqerqt6vA=
+  version "7.16.2"
+  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-bugfix-safari-id-destructuring-collision-in-function-expression/-/plugin-bugfix-safari-id-destructuring-collision-in-function-expression-7.16.2.tgz#2977fca9b212db153c195674e57cfab807733183"
+  integrity sha1-KXf8qbIS2xU8GVZ05Xz6uAdzMYM=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
@@ -880,16 +880,16 @@
     "@babel/plugin-transform-react-jsx" "^7.16.0"
 
 "@babel/plugin-transform-react-jsx-self@^7.12.1":
-  version "7.14.9"
-  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.14.9.tgz#33041e665453391eb6ee54a2ecf3ba1d46bd30f4"
-  integrity sha1-MwQeZlRTOR627lSi7PO6HUa9MPQ=
+  version "7.16.0"
+  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.16.0.tgz#09202158abbc716a08330f392bfb98d6b9acfa0c"
+  integrity sha1-CSAhWKu8cWoIMw85K/uY1rms+gw=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
 "@babel/plugin-transform-react-jsx-source@^7.12.1":
-  version "7.14.5"
-  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.14.5.tgz#79f728e60e6dbd31a2b860b0bf6c9765918acf1d"
-  integrity sha1-efco5g5tvTGiuGCwv2yXZZGKzx0=
+  version "7.16.0"
+  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.16.0.tgz#d40c959d7803aae38224594585748693e84c0a22"
+  integrity sha1-1AyVnXgDquOCJFlFhXSGk+hMCiI=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
@@ -1336,9 +1336,9 @@
     minimatch "^3.0.4"
 
 "@humanwhocodes/object-schema@^1.2.0":
-  version "1.2.0"
-  resolved "https://npm.corp.kuaishou.com/@humanwhocodes%2fobject-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
-  integrity sha1-h956+cIxgm/daKxyWPd8Qp4OX88=
+  version "1.2.1"
+  resolved "https://npm.corp.kuaishou.com/@humanwhocodes%2fobject-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
+  integrity sha1-tSBSnsIdjllFoYUd/Rwy6U45/0U=
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -1587,6 +1587,16 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@reduxjs/toolkit@^1.6.2":
+  version "1.6.2"
+  resolved "https://npm.corp.kuaishou.com/@reduxjs%2ftoolkit/-/toolkit-1.6.2.tgz#2f2b5365df77dd6697da28fdf44f33501ed9ba37"
+  integrity sha1-LytTZd933WaX2ij99E8zUB7Zujc=
+  dependencies:
+    immer "^9.0.6"
+    redux "^4.1.0"
+    redux-thunk "^2.3.0"
+    reselect "^4.0.0"
+
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
   resolved "https://npm.corp.kuaishou.com/@rollup%2fplugin-node-resolve/-/plugin-node-resolve-7.1.3.tgz#80de384edfbd7bfc9101164910f86078151a3eca"
@@ -1755,9 +1765,9 @@
     pretty-format "^26.6.2"
 
 "@testing-library/jest-dom@^5.11.4":
-  version "5.14.1"
-  resolved "https://npm.corp.kuaishou.com/@testing-library%2fjest-dom/-/jest-dom-5.14.1.tgz#8501e16f1e55a55d675fe73eecee32cdaddb9766"
-  integrity sha1-hQHhbx5VpV1nX+c+7O4yza3bl2Y=
+  version "5.15.0"
+  resolved "https://npm.corp.kuaishou.com/@testing-library%2fjest-dom/-/jest-dom-5.15.0.tgz#4f5295dbc476a14aec3b07176434b3d51aae5da7"
+  integrity sha1-T1KV28R2oUrsOwcXZDSz1RquXac=
   dependencies:
     "@babel/runtime" "^7.9.2"
     "@types/testing-library__jest-dom" "^5.9.1"
@@ -3212,13 +3222,13 @@ browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
     caniuse-db "^1.0.30000639"
     electron-to-chromium "^1.2.7"
 
-browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.16.6, browserslist@^4.17.5, browserslist@^4.6.2, browserslist@^4.6.4:
-  version "4.17.5"
-  resolved "https://npm.corp.kuaishou.com/browserslist/-/browserslist-4.17.5.tgz#c827bbe172a4c22b123f5e337533ceebadfdd559"
-  integrity sha1-yCe74XKkwisSP14zdTPO66391Vk=
+browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.16.6, browserslist@^4.17.6, browserslist@^4.6.2, browserslist@^4.6.4:
+  version "4.17.6"
+  resolved "https://npm.corp.kuaishou.com/browserslist/-/browserslist-4.17.6.tgz#c76be33e7786b497f66cad25a73756c8b938985d"
+  integrity sha1-x2vjPneGtJf2bK0lpzdWyLk4mF0=
   dependencies:
-    caniuse-lite "^1.0.30001271"
-    electron-to-chromium "^1.3.878"
+    caniuse-lite "^1.0.30001274"
+    electron-to-chromium "^1.3.886"
     escalade "^3.1.1"
     node-releases "^2.0.1"
     picocolors "^1.0.0"
@@ -3405,14 +3415,14 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30001274"
-  resolved "https://npm.corp.kuaishou.com/caniuse-db/-/caniuse-db-1.0.30001274.tgz#0f45f965fb89beb49cc71d1490dcb183b3eded71"
-  integrity sha1-D0X5ZfuJvrScxx0UkNyxg7Pt7XE=
+  version "1.0.30001278"
+  resolved "https://npm.corp.kuaishou.com/caniuse-db/-/caniuse-db-1.0.30001278.tgz#93faad7b20164754cc1302dac5dc36dfa44e2758"
+  integrity sha1-k/qteyAWR1TMEwLaxdw236ROJ1g=
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001271:
-  version "1.0.30001274"
-  resolved "https://npm.corp.kuaishou.com/caniuse-lite/-/caniuse-lite-1.0.30001274.tgz#26ca36204d15b17601ba6fc35dbdad950a647cc7"
-  integrity sha1-Jso2IE0VsXYBum/DXb2tlQpkfMc=
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001274:
+  version "1.0.30001278"
+  resolved "https://npm.corp.kuaishou.com/caniuse-lite/-/caniuse-lite-1.0.30001278.tgz#51cafc858df77d966b17f59b5839250b24417fff"
+  integrity sha1-Ucr8hY33fZZrF/WbWDklCyRBf/8=
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3872,17 +3882,17 @@ copy-to-clipboard@^3.2.0:
     toggle-selection "^1.0.6"
 
 core-js-compat@^3.18.0, core-js-compat@^3.19.0, core-js-compat@^3.6.2:
-  version "3.19.0"
-  resolved "https://npm.corp.kuaishou.com/core-js-compat/-/core-js-compat-3.19.0.tgz#b3b93f93c8721b3ed52b91f12f964cc410967f8b"
-  integrity sha1-s7k/k8hyGz7VK5HxL5ZMxBCWf4s=
+  version "3.19.1"
+  resolved "https://npm.corp.kuaishou.com/core-js-compat/-/core-js-compat-3.19.1.tgz#fe598f1a9bf37310d77c3813968e9f7c7bb99476"
+  integrity sha1-/lmPGpvzcxDXfDgTlo6ffHu5lHY=
   dependencies:
-    browserslist "^4.17.5"
+    browserslist "^4.17.6"
     semver "7.0.0"
 
 core-js-pure@^3.19.0:
-  version "3.19.0"
-  resolved "https://npm.corp.kuaishou.com/core-js-pure/-/core-js-pure-3.19.0.tgz#db6fdadfdd4dc280ec93b64c3c2e8460e6f10094"
-  integrity sha1-22/a391NwoDsk7ZMPC6EYObxAJQ=
+  version "3.19.1"
+  resolved "https://npm.corp.kuaishou.com/core-js-pure/-/core-js-pure-3.19.1.tgz#edffc1fc7634000a55ba05e95b3f0fe9587a5aa4"
+  integrity sha1-7f/B/HY0AApVugXpWz8P6Vh6WqQ=
 
 core-js@^2.4.0:
   version "2.6.12"
@@ -3890,9 +3900,9 @@ core-js@^2.4.0:
   integrity sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=
 
 core-js@^3.6.5:
-  version "3.19.0"
-  resolved "https://npm.corp.kuaishou.com/core-js/-/core-js-3.19.0.tgz#9e40098a9bc326c7e81b486abbd5e12b9d275176"
-  integrity sha1-nkAJipvDJsfoG0hqu9XhK50nUXY=
+  version "3.19.1"
+  resolved "https://npm.corp.kuaishou.com/core-js/-/core-js-3.19.1.tgz#f6f173cae23e73a7d88fa23b6e9da329276c6641"
+  integrity sha1-9vFzyuI+c6fYj6I7bp2jKSdsZkE=
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -4568,9 +4578,9 @@ doctrine@^3.0.0:
     esutils "^2.0.2"
 
 dom-accessibility-api@^0.5.6:
-  version "0.5.9"
-  resolved "https://npm.corp.kuaishou.com/dom-accessibility-api/-/dom-accessibility-api-0.5.9.tgz#915f8531ba29a50e5c29389dbfb87a9642fef0d6"
-  integrity sha1-kV+FMboppQ5cKTidv7h6lkL+8NY=
+  version "0.5.10"
+  resolved "https://npm.corp.kuaishou.com/dom-accessibility-api/-/dom-accessibility-api-0.5.10.tgz#caa6d08f60388d0bb4539dd75fe458a9a1d0014c"
+  integrity sha1-yqbQj2A4jQu0U53XX+RYqaHQAUw=
 
 dom-align@^1.7.0:
   version "1.12.2"
@@ -4702,10 +4712,10 @@ ejs@^2.6.1:
   resolved "https://npm.corp.kuaishou.com/ejs/-/ejs-2.7.4.tgz#48661287573dcc53e366c7a1ae52c3a120eec9ba"
   integrity sha1-SGYSh1c9zFPjZsehrlLDoSDuybo=
 
-electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.878:
-  version "1.3.885"
-  resolved "https://npm.corp.kuaishou.com/electron-to-chromium/-/electron-to-chromium-1.3.885.tgz#c8cec32fbc61364127849ae00f2395a1bae7c454"
-  integrity sha1-yM7DL7xhNkEnhJrgDyOVobrnxFQ=
+electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.886:
+  version "1.3.890"
+  resolved "https://npm.corp.kuaishou.com/electron-to-chromium/-/electron-to-chromium-1.3.890.tgz#e7143b659f73dc4d0512d1ae4baeb0fb9e7bc835"
+  integrity sha1-5xQ7ZZ9z3E0FEtGuS66w+557yDU=
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -5521,9 +5531,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.14.4"
-  resolved "https://npm.corp.kuaishou.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
-  integrity sha1-g4/fSKi73XnlLuUfsclOPtmLk3k=
+  version "1.14.5"
+  resolved "https://npm.corp.kuaishou.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha1-8JpYSJgdPHcrU5Iwl3hSP42Fw4E=
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -6176,9 +6186,9 @@ ignore@^4.0.6:
   integrity sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=
 
 ignore@^5.1.4, ignore@^5.1.8:
-  version "5.1.8"
-  resolved "https://npm.corp.kuaishou.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
-  integrity sha1-8VCotQo0KJsz4i9YiavU2AFvDlc=
+  version "5.1.9"
+  resolved "https://npm.corp.kuaishou.com/ignore/-/ignore-5.1.9.tgz#9ec1a5cbe8e1446ec60d4420060d43aa6e7382fb"
+  integrity sha1-nsGly+jhRG7GDUQgBg1Dqm5zgvs=
 
 image-size@~0.5.0:
   version "0.5.5"
@@ -6189,6 +6199,11 @@ immer@8.0.1:
   version "8.0.1"
   resolved "https://npm.corp.kuaishou.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha1-nHPbaD4rOXXEJPsFcq9YiYd65lY=
+
+immer@^9.0.6:
+  version "9.0.6"
+  resolved "https://npm.corp.kuaishou.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
+  integrity sha1-epa/JnTQbIFD4yfL9zU5OI3fGnM=
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -7518,9 +7533,9 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4
     json5 "^1.0.1"
 
 loader-utils@^2.0.0:
-  version "2.0.1"
-  resolved "https://npm.corp.kuaishou.com/loader-utils/-/loader-utils-2.0.1.tgz#3b8d4386f42378d6434d32d7bc08e7a52d39575e"
-  integrity sha1-O41DhvQjeNZDTTLXvAjnpS05V14=
+  version "2.0.2"
+  resolved "https://npm.corp.kuaishou.com/loader-utils/-/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"
+  integrity sha1-1uO0+4GHByGuTghoqxHdY4NowSk=
   dependencies:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
@@ -7558,11 +7573,6 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://npm.corp.kuaishou.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
-
-lodash.clonedeep@^4.5.0:
-  version "4.5.0"
-  resolved "https://npm.corp.kuaishou.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -7821,9 +7831,9 @@ mime@1.6.0, mime@^1.4.1:
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
 mime@^2.4.4:
-  version "2.5.2"
-  resolved "https://npm.corp.kuaishou.com/mime/-/mime-2.5.2.tgz#6e3dc6cc2b9510643830e5f19d5cb753da5eeabe"
-  integrity sha1-bj3GzCuVEGQ4MOXxnVy3U9pe6r4=
+  version "2.6.0"
+  resolved "https://npm.corp.kuaishou.com/mime/-/mime-2.6.0.tgz#a2a682a95cd4d0cb1d6257e28f83da7e35800367"
+  integrity sha1-oqaCqVzU0MsdYlfij4PafjWAA2c=
 
 mimic-fn@^2.1.0:
   version "2.1.0"
@@ -8632,6 +8642,11 @@ path-to-regexp@^1.7.0:
   integrity sha1-iHs7qdhDk+h6CgufTLdWGYtTVIo=
   dependencies:
     isarray "0.0.1"
+
+path-to-regexp@^6.2.0:
+  version "6.2.0"
+  resolved "https://npm.corp.kuaishou.com/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
+  integrity sha1-97OAMzYQTDRoia3s5hRmkjBkXzg=
 
 path-type@^4.0.0:
   version "4.0.0"
@@ -10282,13 +10297,13 @@ rc-tween-one@^2.4.0, rc-tween-one@^2.5.0:
     tween-functions "~1.2.0"
 
 rc-tween-one@^3.0.0-beta.7:
-  version "3.0.0-beta.7"
-  resolved "https://npm.corp.kuaishou.com/rc-tween-one/-/rc-tween-one-3.0.0-beta.7.tgz#642b546f93198c1e5ac8fc40b0258af7155c234e"
-  integrity sha1-ZCtUb5MZjB5ayPxAsCWK9xVcI04=
+  version "3.0.2"
+  resolved "https://npm.corp.kuaishou.com/rc-tween-one/-/rc-tween-one-3.0.2.tgz#1d745930c56b19f3eb5890ef897f880368e317c3"
+  integrity sha1-HXRZMMVrGfPrWJDviX+IA2jjF8M=
   dependencies:
     "@babel/runtime" "^7.11.1"
     style-utils "^0.3.4"
-    tween-one "^1.0.33"
+    tween-one "^1.0.50"
 
 rc-upload@~4.3.0:
   version "4.3.2"
@@ -10530,7 +10545,12 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^1.0.0"
 
-redux@^4.0.0:
+redux-thunk@^2.3.0:
+  version "2.4.0"
+  resolved "https://npm.corp.kuaishou.com/redux-thunk/-/redux-thunk-2.4.0.tgz#ac89e1d6b9bdb9ee49ce69a69071be41bbd82d67"
+  integrity sha1-rInh1rm9ue5JzmmmkHG+QbvYLWc=
+
+redux@^4.0.0, redux@^4.1.0:
   version "4.1.2"
   resolved "https://npm.corp.kuaishou.com/redux/-/redux-4.1.2.tgz#140f35426d99bb4729af760afcf79eaaac407104"
   integrity sha1-FA81Qm2Zu0cpr3YK/PeeqqxAcQQ=
@@ -10666,6 +10686,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://npm.corp.kuaishou.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+reselect@^4.0.0:
+  version "4.1.2"
+  resolved "https://npm.corp.kuaishou.com/reselect/-/reselect-4.1.2.tgz#7bf642992d143d4f3b0f2dca8aa52018808a1d51"
+  integrity sha1-e/ZCmS0UPU87Dy3KiqUgGICKHVE=
 
 resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
   version "1.5.1"
@@ -11734,12 +11759,11 @@ symbol-tree@^3.2.4:
   integrity sha1-QwY30ki6d+B4iDlR+5qg7tfGP6I=
 
 table@^6.0.9:
-  version "6.7.2"
-  resolved "https://npm.corp.kuaishou.com/table/-/table-6.7.2.tgz#a8d39b9f5966693ca8b0feba270a78722cbaf3b0"
-  integrity sha1-qNObn1lmaTyosP66Jwp4ciy687A=
+  version "6.7.3"
+  resolved "https://npm.corp.kuaishou.com/table/-/table-6.7.3.tgz#255388439715a738391bd2ee4cbca89a4d05a9b7"
+  integrity sha1-JVOIQ5cVpzg5G9LuTLyomk0Fqbc=
   dependencies:
     ajv "^8.0.1"
-    lodash.clonedeep "^4.5.0"
     lodash.truncate "^4.4.2"
     slice-ansi "^4.0.0"
     string-width "^4.2.3"
@@ -11877,9 +11901,9 @@ timsort@^0.3.0:
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
 tiny-invariant@^1.0.2:
-  version "1.1.0"
-  resolved "https://npm.corp.kuaishou.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
-  integrity sha1-Y0xfjv3CdxS384bDXmdgmR0jCHU=
+  version "1.2.0"
+  resolved "https://npm.corp.kuaishou.com/tiny-invariant/-/tiny-invariant-1.2.0.tgz#a1141f86b672a9148c72e978a19a73b9b94a15a9"
+  integrity sha1-oRQfhrZyqRSMcul4oZpzublKFak=
 
 tiny-warning@^1.0.0, tiny-warning@^1.0.3:
   version "1.0.3"
@@ -12013,7 +12037,7 @@ tween-functions@1.x, tween-functions@^1.2.0, tween-functions@~1.2.0:
   resolved "https://npm.corp.kuaishou.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
   integrity sha1-GuOlDnxguz3vd06scHrLynO7w/8=
 
-tween-one@^1.0.33:
+tween-one@^1.0.50:
   version "1.0.54"
   resolved "https://npm.corp.kuaishou.com/tween-one/-/tween-one-1.0.54.tgz#713844a331a0863befab257f793e99ef10ca975c"
   integrity sha1-cThEozGghjvvqyV/eT6Z7xDKl1w=

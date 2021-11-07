@@ -42,6 +42,27 @@
         cursor: pointer;
         line-height: 20px;
         transition: all 0.3s ease;
+        &.active {
+          color: rgba(254, 144, 0, 1);
+          font-size: 16.5px;
+          font-weight: 700;
+          &::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: '';
+          width: 0%;
+          height: 6px;
+          background: linear-gradient(90deg, #ff813a, #ff3d3d);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
         .node {
           height: 6px;
           width: 6px;
@@ -68,6 +89,7 @@
           }
         }
       }
+
       .header-item:hover {
         color: rgba(254, 144, 0, 1);
         font-size: 16.5px;

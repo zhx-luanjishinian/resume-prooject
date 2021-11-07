@@ -2,19 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './index.less';
 import classnames from 'classnames';
 import { useHistory } from 'react-router-dom';
-
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 const blackHeaderList = ['/home/search', '/home/detail'];
 
 const Header = () => {
   const history = useHistory();
-  //const { pathname } = history.location;
+  const { pathname } = history.location;
   const [hasBG, setHasBG] = useState(false);
   useEffect(() => {
     const home = document.querySelector('.home');
     home.scrollTop = 0;
     const handleScroll = (e) => {
-      //setHasBG(e.target.scrollTop > 5 || blackHeaderList.some((item) => pathname.startsWith(item)));
+      setHasBG(e.target.scrollTop > 5 || blackHeaderList.some((item) => pathname.startsWith(item)));
     };
     home?.addEventListener('scroll', handleScroll);
     return () => {
@@ -25,7 +24,7 @@ const Header = () => {
   return (
     <header className={classnames('header', { hasBG })}>
       <img
-        src="/img/logo-white.png"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo%21_Logo.svg/1200px-Logo%21_Logo.svg.png"
         alt="优加实习社"
         onClick={() => history.push('/')}
         className="logo"
@@ -35,13 +34,13 @@ const Header = () => {
           <div
             key={item.text}
             className={classnames('header-item', {
-              //active: item.link === pathname,
+              active: item.link === pathname,
             })}
             onClick={() => {
               history.push(item.link);
             }}
           >
-            <span className={classnames('node')} />
+            <span className={classnames('node', { active: item.link === pathname })} />
             {item.text}
           </div>
         ))}
@@ -89,10 +88,10 @@ export const HeaderItems = [
   },
   {
     text: '简历修改',
-    link: '/make',
+    link: '/modify',
   },
   {
     text: '模拟面试',
-    link: '/',
+    link: '/interviews',
   },
 ];

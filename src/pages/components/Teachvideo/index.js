@@ -36,13 +36,13 @@ function Teachvideo() {
           <TweenOne key="video" animation={{ ...animation, delay: 300 }} className="content4-video">
             <video
               id="lp-video"
-              autoplay="autoplay"
+              autoPlay="autoplay"
               muted="muted"
               loop="loop"
               poster=""
               width="900px"
               preload="auto"
-              playsinline="playsinline"
+              playsInline="playsinline"
               webkit-playsinline="true"
               autostart="0"
               src="https://files.wondercv.com/%E9%A6%96%E9%A1%B5%E8%A7%86%E9%A2%91_v3.ogg"

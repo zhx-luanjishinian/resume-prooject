@@ -17,6 +17,7 @@ export function isAuth(userAuth, identify) {
 }
 
 export function renderRoutes(routes, auth, noMatchPath) {
+  //   console.log(111);
   return routes ? (
     <Switch>
       {routes.map((route, i) => {
@@ -42,7 +43,7 @@ export function renderRoutes(routes, auth, noMatchPath) {
         }
         return <Route exact key={route.path} path={route.path} component={route.component} />;
       })}
-      {/* {renderRedirect(auth)} */}
+      {renderRedirect(auth)}
       <Redirect to={noMatchPath ?? '/'} />
     </Switch>
   ) : null;

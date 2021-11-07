@@ -1,11 +1,11 @@
 // import React from 'react';
-import { ComponentType, LazyExoticComponent, ReactNode } from 'react';
+import { ComponentType, LazyExoticComponent, lazy, ReactNode } from 'react';
 
 const routes = [
   {
     path: '/make',
     component: lazy(async () => import('../pages/make')),
-    identify: [IDENTIFY.AD, IDENTIFY.CONTENT, IDENTIFY.EC],
+    //     identify: [IDENTIFY.AD, IDENTIFY.CONTENT, IDENTIFY.EC],
     meta: {
       title: '概览',
     },
