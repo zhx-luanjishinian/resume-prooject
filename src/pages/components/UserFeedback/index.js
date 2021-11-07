@@ -42,7 +42,15 @@ function UserFeedback() {
             animation={{ ...animation, delay: 300 }}
             className="userfeedback-video"
           >
-            <BannerAnim prefixCls="banner-user" autoPlay autoPlaySpeed={2000}>
+            <BannerAnim
+              prefixCls="banner-user"
+              autoPlaySpeed={2000}
+              style={{
+                position: 'inherit',
+                overflow: 'hidden',
+                minHeight: 100,
+              }}
+            >
               {userInfo.map((item) => {
                 return (
                   <Element
@@ -72,7 +80,7 @@ function UserFeedback() {
                           id="avatar"
                           style={{ marginRight: 16 }}
                           size={56}
-                          src={<Image src={item.url} style={{ width: 56 }} />}
+                          src={<Image preview={false} src={item.url} style={{ width: 56 }} />}
                         />
                         <div className="info">
                           <span id="name" className="info-name">
