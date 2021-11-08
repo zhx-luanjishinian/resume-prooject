@@ -10,6 +10,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import { allRouterPaths, menuOpenKeys, navs } from '../../router';
 import Guard from '../../router/Guard';
 import { isAuth } from '../../router/renderRoutes';
+import CVDrawer from '../Drawer';
 import './index.less';
 
 const { Header, Content, Sider, Footer } = Layout;
@@ -20,6 +21,8 @@ const AllianceLayout = () => {
   const [showSider, { setTrue, setFalse }] = useBoolean(true);
   const [currentPath, setCurrentPath] = useState('');
   const [collapsed, setCollapsed] = useState(false);
+  const [CVDrawerVisible, setCVDrawerVisibile] = useState(false);
+  const [CVDrawerData, setCVDrawerData] = useState({ title: '' });
   //   const { userInfo } = useGetUserInfo();
   const auth = useSelector((state) => state.global.auth);
   const history = useHistory();
@@ -53,6 +56,24 @@ const AllianceLayout = () => {
       count: 0,
     },
   ];
+  const menuRightList = [
+    {
+      icon: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E5%B0%8F%E8%B4%B4%E5%A3%AB.png?sign=2845b5f2129347b3979672b8577aa7cf&t=1636386777',
+      title: '贴士',
+      count: 1,
+    },
+    {
+      icon: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E8%AF%8A%E6%96%AD.png?sign=e3ace02a90a5c83b1e605dcb2074f6b0&t=1636386747',
+      title: '诊断',
+      count: 4,
+    },
+    {
+      icon: 'https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%A1%88%E4%BE%8B%20(1).png?sign=4f7bb20b3f7e03675cf1d8d1e34748ef&t=1636386805',
+      title: '案例',
+      count: 3,
+    },
+  ];
+
   const toggle = () => {
     setCollapsed(!collapsed);
   };
@@ -191,7 +212,7 @@ const AllianceLayout = () => {
               <Menu
                 mode="inline"
                 onClick={(e) => {
-                  history.push(e.key);
+                  //    history.push(e.key);
                 }}
                 defaultOpenKeys={menuOpenKeys}
                 selectedKeys={[currentPath]}
@@ -213,19 +234,49 @@ const AllianceLayout = () => {
                   );
                 })}
               </Menu>
-              {/* <div className="side-collap">
-                {React.createElement(collapsed ? SystemMenufold : SystemMenuunfold, {
-                  className: 'trigger',
-                  onClick: toggle,
-                })}
-              </div> */}
             </Sider>
           ) : null}
           <Content style={{ position: 'relative', padding: 24 }} className="layout-content">
             <Guard />
           </Content>
-          <Sider theme="light" className="layout-sider-right" width={120}>
-            Sider
+
+          <Sider theme="light" className="layout-sider-right" width={120} id="www">
+            <Menu
+              mode="inline"
+              defaultOpenKeys={menuOpenKeys}
+              selectedKeys={[currentPath]}
+              //               style={{ position: 'relative' }}
+            >
+              <CVDrawer
+                visible={CVDrawerVisible}
+                data={CVDrawerData}
+                onClose={() => {
+                  console.log(111);
+                  setCVDrawerVisibile(false);
+                }}
+              />
+              {menuRightList.map((item) => {
+                return (
+                  <Menu.Item
+                    className="layout-sider-right-menuItem"
+                    onClick={(e) => {
+                      console.log(1);
+                      setCVDrawerVisibile(true);
+                      setCVDrawerData({ title: item.title });
+                    }}
+                  >
+                    <div className="menuItem-box">
+                      <div style={{ width: '100%', height: 35 }}>
+                        <Badge count={item.count}>
+                          <Avatar shape="square" src={item.icon} />
+                        </Badge>
+                      </div>
+                      <div className="menuItem-text">{item.title}</div>
+                    </div>
+                  </Menu.Item>
+                );
+              })}
+            </Menu>
           </Sider>
         </Layout>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>

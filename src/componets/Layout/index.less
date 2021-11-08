@@ -90,11 +90,57 @@
       right: 0;
       top: 64px;
       height: 100vh;
-      overflow: auto;
       position: fixed;
       z-index: 1;
       width: 120px;
+      background: rgba(254, 144, 0, 0);
       min-width: 120px;
+      transition: all 0.3s;
+      .ant-menu {
+        background: rgba(254, 144, 0, 0);
+      }
+      &-menuItem {
+        width: 100%;
+        height: 90px;
+        padding-right: 10px;
+      }
+      .menuItem-box {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-top: 5px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        opacity: 1;
+        transition: all 0.4s;
+
+        .menuItem-text {
+          width: 100%;
+          height: 35px;
+          font-size: 13px;
+          font-weight: 500;
+          position: absolute;
+          top: 13px;
+          right: 3px;
+          opacity: 0;
+        }
+        .menuItem-text:hover {
+          opacity: 1;
+        }
+      }
+      .menuItem-box:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 5px 21px 0 rgb(78 78 78 / 5%);
+      }
     }
   }
 }
