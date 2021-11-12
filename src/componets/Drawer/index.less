@@ -10,20 +10,61 @@
   border: 1px solid #ebedf0;
   border-radius: 2px;
 }
-
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+  box-shadow: -6px 0 16px -8px rgb(0 0 0 / 8%), -9px 0 28px 0 rgb(0 0 0 / 5%),
+    -12px 0 48px 16px rgb(0 0 0 / 3%);
+  margin-top: 5px;
+  border-radius: 30px;
+}
+.ant-drawer-right .ant-drawer-content-wrapper {
+  right: 0;
+  /* box-shadow: -6px 0 16px -8px rgb(0 0 0 / 8%), -9px 0 28px 0 rgb(0 0 0 / 5%), -12px 0 48px 16px rgb(0 0 0 / 3%); */
+  margin-top: 5px;
+  border-radius: 30px;
+}
+.ant-drawer-content {
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border: 0;
+}
+.ant-drawer-header {
+  position: relative;
+  padding: 0px 12px;
+  color: rgba(0, 0, 0, 0.85);
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 2px 2px 0 0;
+}
+.ant-drawer-body {
+  margin: 50px 0;
+  flex-grow: 1;
+  padding: 24px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.5715;
+  word-wrap: break-word;
+  position: relative;
+}
 .panel_header {
+  left: 0px;
+  top: 68px;
   width: 100%;
-  height: 48px;
+  height: 80px;
   margin-bottom: 34px;
   padding: 0 35px;
-  background-color: aquamarine;
   position: fixed;
+  background: #fff;
+  z-index: 3;
   .icon.tips {
     position: relative;
     float: left;
     width: 48px;
     height: 48px;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
     border: solid 1px #cccccc;
     border-radius: 10px;
     background: #ffffff
@@ -33,10 +74,18 @@
     background-position: center;
     cursor: pointer;
     &:hover {
-      background: rgb(255, 90, 14, 0.3);
+      background: rgb(255, 90, 14, 1)
+        url(https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E5%B0%8F%E8%B4%B4%E5%A3%AB.png?sign=2845b5f2129347b3979672b8577aa7cf&t=1636386777)
+        no-repeat;
+      background-position: center;
+      background-size: 60%;
     }
     &.current {
-      background: rgb(255, 90, 14, 0.3);
+      background: rgb(255, 90, 14, 1)
+        url(https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E5%B0%8F%E8%B4%B4%E5%A3%AB.png?sign=2845b5f2129347b3979672b8577aa7cf&t=1636386777)
+        no-repeat;
+      background-size: 60%;
+      background-position: center;
       &::after {
         content: '';
         position: absolute;
@@ -45,7 +94,7 @@
         width: 8px;
         height: 8px;
         transform: rotate(45deg);
-        background-color: rgba(255, 90, 14, 0.3);
+        background-color: rgb(255, 90, 14);
       }
     }
   }
@@ -54,7 +103,7 @@
     float: left;
     width: 48px;
     height: 48px;
-    margin-right: 10px;
+    margin-right: 20px;
     border: solid 1px #cccccc;
     border-radius: 10px;
     background: #ffffff
@@ -64,10 +113,18 @@
     background-position: center;
     cursor: pointer;
     &:hover {
-      background: rgb(255, 90, 14, 0.7);
+      background: rgb(255, 90, 14)
+        url(https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E8%AF%8A%E6%96%AD.png?sign=e3ace02a90a5c83b1e605dcb2074f6b0&t=1636386747)
+        no-repeat;
+      background-position: center;
+      background-size: 60%;
     }
     &.current {
-      background: rgb(255, 90, 14, 0.7);
+      background: rgb(255, 90, 14)
+        url(https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E8%AF%8A%E6%96%AD.png?sign=e3ace02a90a5c83b1e605dcb2074f6b0&t=1636386747)
+        no-repeat;
+      background-position: center;
+      background-size: 60%;
       &::after {
         content: '';
         position: absolute;
@@ -76,7 +133,7 @@
         width: 8px;
         height: 8px;
         transform: rotate(45deg);
-        background-color: rgb(255, 90, 14, 0.7);
+        background-color: rgb(255, 90, 14);
       }
     }
   }
@@ -85,20 +142,29 @@
     float: left;
     width: 48px;
     height: 48px;
-    margin-right: 10px;
+    margin-right: 20px;
     border: solid 1px #cccccc;
     border-radius: 10px;
     background: #ffffff
       url('https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%A1%88%E4%BE%8B%20(1).png?sign=4f7bb20b3f7e03675cf1d8d1e34748ef&t=1636386805')
       no-repeat;
+
     background-size: 60%;
     background-position: center;
     cursor: pointer;
     &:hover {
-      background: rgb(255, 90, 14, 0.7);
+      background: rgb(255, 90, 14, 0.7)
+        url('https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%A1%88%E4%BE%8B%20(1).png?sign=4f7bb20b3f7e03675cf1d8d1e34748ef&t=1636386805')
+        no-repeat;
+      background-size: 60%;
+      background-position: center;
     }
     &.current {
-      background: rgb(255, 90, 14, 0.7);
+      background: rgb(255, 90, 14, 0.7)
+        url('https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%A1%88%E4%BE%8B%20(1).png?sign=4f7bb20b3f7e03675cf1d8d1e34748ef&t=1636386805')
+        no-repeat;
+      background-size: 60%;
+      background-position: center;
       &::after {
         content: '';
         position: absolute;
@@ -115,12 +181,12 @@
 .panel-content {
   height: 95%;
   width: 100%;
-  background: rgb(187, 32, 32);
 }
 
 .circle {
   height: 62px;
   width: 62px;
+  margin-left: 223px;
 
   .background {
     fill: transparent;
