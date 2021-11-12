@@ -10,3 +10,167 @@
   border: 1px solid #ebedf0;
   border-radius: 2px;
 }
+
+.panel_header {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 34px;
+  padding: 0 35px;
+  background-color: aquamarine;
+  position: fixed;
+  .icon.tips {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    background: #ffffff
+      url(https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E5%B0%8F%E8%B4%B4%E5%A3%AB.png?sign=2845b5f2129347b3979672b8577aa7cf&t=1636386777)
+      no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+      background: rgb(255, 90, 14, 0.3);
+    }
+    &.current {
+      background: rgb(255, 90, 14, 0.3);
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+        background-color: rgba(255, 90, 14, 0.3);
+      }
+    }
+  }
+  .icon.diagnose {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    background: #ffffff
+      url(https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E8%AF%8A%E6%96%AD.png?sign=e3ace02a90a5c83b1e605dcb2074f6b0&t=1636386747)
+      no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+      background: rgb(255, 90, 14, 0.7);
+    }
+    &.current {
+      background: rgb(255, 90, 14, 0.7);
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+        background-color: rgb(255, 90, 14, 0.7);
+      }
+    }
+  }
+  .icon.case {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    background: #ffffff
+      url('https://6d78-mxm1923893223-ulteh-1302287111.tcb.qcloud.la/resume/%E6%A1%88%E4%BE%8B%20(1).png?sign=4f7bb20b3f7e03675cf1d8d1e34748ef&t=1636386805')
+      no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+      background: rgb(255, 90, 14, 0.7);
+    }
+    &.current {
+      background: rgb(255, 90, 14, 0.7);
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+        background-color: rgb(255, 90, 14, 0.7);
+      }
+    }
+  }
+}
+.panel-content {
+  height: 95%;
+  width: 100%;
+  background: rgb(187, 32, 32);
+}
+
+.circle {
+  height: 62px;
+  width: 62px;
+
+  .background {
+    fill: transparent;
+    stroke: rgb(255, 90, 14, 0.7);
+    transition: all 200ms ease;
+  }
+
+  .foreground {
+    fill: transparent;
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    stroke: #37ee89;
+    transform-origin: 50% 50%;
+    transform: rotate(-270deg);
+    transition: all 800ms ease;
+  }
+
+  .line {
+    stroke-width: 2;
+    stroke: rgb(255, 90, 14, 0.7);
+    transform-origin: 50% 50%;
+    transition: all 500ms ease;
+  }
+
+  .line2 {
+    transform: rotate(-90deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .background {
+      stroke: transparent;
+    }
+
+    .foreground {
+      stroke-dashoffset: 0;
+      transform: rotate(-90deg);
+    }
+
+    .line {
+      stroke: #37ee89;
+    }
+
+    .line {
+      transform: rotate(180deg);
+    }
+
+    .line2 {
+      transform: rotate(0);
+    }
+  }
+}

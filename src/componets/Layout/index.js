@@ -1,4 +1,3 @@
-import { SystemMenufold, SystemMenuunfold } from '@ant-design/icons';
 import { useBoolean } from 'ahooks';
 // import logoImg from 'assets/image/logo.png';
 // import useGetUserInfo from 'hooks/useGetUserInfo';
@@ -219,7 +218,7 @@ const AllianceLayout = () => {
               >
                 {menuLeftList.map((item) => {
                   return (
-                    <Menu.Item className="layout-sider-left-menuItem">
+                    <Menu.Item className="layout-sider-left-menuItem" key={item.title}>
                       <div className="menuItem-box">
                         <div style={{ width: '100%', height: 35 }}>
                           <Badge count={item.count}>
@@ -250,14 +249,15 @@ const AllianceLayout = () => {
               <CVDrawer
                 visible={CVDrawerVisible}
                 data={CVDrawerData}
+                menuRightList={menuRightList}
                 onClose={() => {
-                  console.log(111);
                   setCVDrawerVisibile(false);
                 }}
               />
               {menuRightList.map((item) => {
                 return (
                   <Menu.Item
+                    key={item.title}
                     className="layout-sider-right-menuItem"
                     onClick={(e) => {
                       console.log(1);
