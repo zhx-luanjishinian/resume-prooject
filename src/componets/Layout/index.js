@@ -1,7 +1,7 @@
 import { useBoolean } from 'ahooks';
 // import logoImg from 'assets/image/logo.png';
 // import useGetUserInfo from 'hooks/useGetUserInfo';
-import { Avatar, Col, Layout, Menu, Row, Space, Typography, Badge, Image } from 'antd';
+import { Avatar, Alert, Col, Layout, Menu, Row, Space, Typography, Badge, Image } from 'antd';
 import { pathToRegexp } from 'path-to-regexp';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
