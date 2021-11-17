@@ -25,11 +25,8 @@ const Make = () => {
       />
       <div className="CV">
         <Info />
-
-        <Skill />
-
         <Educate />
-
+        <Skill />
         <Project />
 
         <Internship />

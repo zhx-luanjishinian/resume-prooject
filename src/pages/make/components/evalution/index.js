@@ -1,6 +1,11 @@
 import React from 'react';
+import Divide from '../../common/divide';
 
 const Evalution = () => {
-  return <div>1111</div>;
+  return (
+    <div>
+      <Divide />
+    </div>
+  );
 };
 export default Evalution;
