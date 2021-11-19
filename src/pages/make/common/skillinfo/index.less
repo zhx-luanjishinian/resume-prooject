@@ -1,0 +1,21 @@
+.skill {
+  &-item {
+    font-family: fantasy;
+    position: relative;
+    /* margin-left: 10px; */
+    padding-left: 18px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgba(41, 52, 98, 1);
+    }
+  }
+}

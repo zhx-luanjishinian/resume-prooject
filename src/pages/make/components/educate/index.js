@@ -4,6 +4,7 @@ import Title from '../../common/title';
 import { Tooltip } from 'antd';
 import Hover from '../../common/hover';
 import EducationInfo from '../../common/educationInfo';
+import '../../common/common.less';
 import './index.less';
 import { cloneDeep } from 'lodash';
 
@@ -32,8 +33,8 @@ const Educate = () => {
   const [educateData, setEducateData] = useState(cloneDeep(educateData1));
 
   return (
-    <div className="educate">
-      <Hover Data={educateData} addData={educateData1} UseFunction={setEducateData} />
+    <div className="hover-box">
+      <Hover Data={educateData} addData={educateData1[0]} UseFunction={setEducateData} />
       <Title title="教育背景" />
       <EducationInfo educateData={educateData} />
       <Divide />
