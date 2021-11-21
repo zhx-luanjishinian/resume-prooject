@@ -1,8 +1,9 @@
 import React from 'react';
 import { Tag } from 'antd';
 import './index.less';
-const CaseList = [
+export const CaseList = [
   {
+    time: '2021.01-2021.09',
     title: '优加银行（中国）有限公司',
     tag: '客户经理',
     content: [
@@ -14,6 +15,7 @@ const CaseList = [
     ],
   },
   {
+    time: '2021.01-2021.09',
     title: '顺丰速递有限公司',
     tag: '仓管员，客服员',
     content: [
@@ -25,6 +27,7 @@ const CaseList = [
     ],
   },
   {
+    time: '2021.01-2021.09',
     title: '智驾车联网业务管理系统',
     tag: '石市通客户端开发',
     content: [
@@ -36,6 +39,7 @@ const CaseList = [
     ],
   },
   {
+    time: '2021.01-2021.09',
     title: '个人网站--五百丁',
     tag: '独立完成',
     content: [

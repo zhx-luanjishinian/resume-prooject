@@ -279,7 +279,7 @@ const AllianceLayout = () => {
             </Menu>
           </Sider>
         </Layout>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>优加简历 ©2021.09 Created by Greenet</Footer>
       </Layout>
     </div>
   );
